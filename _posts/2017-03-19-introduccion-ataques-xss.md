@@ -41,7 +41,7 @@ Tom accede a su perfil y modifica sus datos introduciendo código JavaScript:
 Cuando Jerry acceda a ver el perfil de Tom, el servidor enviará en el contenido el script inyectado por Tom y este se ejecutará en el navegador de Jerry:
 {: style="text-align: justify;"}
 
-[![Stored XSS Fase 2](https://donttouchmynet.github.io/assets/images/old/xss2-300x257.png)](https://donttouchmynet.github.io/assets/images/old/xss2.png)    [![Stored XSS Fase 3](https://donttouchmynet.github.io/assets/images/old/xss3-1-300x217.png)](https://donttouchmynet.github.io/assets/images/old/xss3-1.png)
+[![Stored XSS Fase 2](https://donttouchmynet.github.io/assets/images/old/xss2-300x257.png)](https://donttouchmynet.github.io/assets/images/old/xss2.png)    [![Stored XSS Fase 3](https://donttouchmynet.github.io/assets/images/old/xss3-300x217.png)](https://donttouchmynet.github.io/assets/images/old/xss3.png)
 
 Si analizamos el código HTML podremos ver el script introducido por Tom:
 
