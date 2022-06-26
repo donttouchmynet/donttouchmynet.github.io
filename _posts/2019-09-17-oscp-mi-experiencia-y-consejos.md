@@ -48,6 +48,6 @@ Buffer Overflow: Descargar máquina de: <https://developer.microsoft.com/en-us/
 
 Posiblemente el mejor repositorio de recursos para el OSCP: <https://github.com/rewardone/OSCPRepo>
 
-Además de estos recursos, es interesante leer soluciones a retos [CTF ](https://donttouchmy.net/tag/ctf/)y para poder practicar sin acceso al laboratorio recomiendo [Hack The Box](http://www.hackthebox.eu/). En [Internet](https://www.reddit.com/r/oscp/comments/alf4nf/oscp_like_boxes_on_hack_the_box_credit_tj_null_on/) podremos encontrar qué máquinas de Hack The Box son similares a las que podemos encontrar en el laboratorio.
+Además de estos recursos, es interesante leer soluciones a retos [CTF](https://donttouchmynet.github.io/tags/#ctf)y para poder practicar sin acceso al laboratorio recomiendo [Hack The Box](http://www.hackthebox.eu/). En [Internet](https://www.reddit.com/r/oscp/comments/alf4nf/oscp_like_boxes_on_hack_the_box_credit_tj_null_on/) podremos encontrar qué máquinas de Hack The Box son similares a las que podemos encontrar en el laboratorio.
 
 Espero que estos pequeños consejos sean de utilidad.

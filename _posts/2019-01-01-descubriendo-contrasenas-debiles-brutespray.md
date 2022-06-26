@@ -62,5 +62,5 @@ python brutespray.py --file /path/nmap.xml --threads 5 --hosts 5
 Pese a que esta herramienta es utilizada frecuentemente por equipos de ataque, es una herramienta muy útil también para que los equipos de defensa verifiquen de forma periódica que no existen servicios con contraseñas débiles. Incluso para verificar si una cuenta que conocíamos ha sido borrada completamente de todos los servicios. Esto es de vital importancia ya que los errores de configuración son una de las causas principales que permiten a un atacante lograr acceso a un sistema.
 {: style="text-align: justify;"}
 
-En nuestra sección de [herramientas](https://donttouchmy.net/herramientas/) podréis ver más herramientas útiles tanto para equipos de defensa como para equipos de ataque.
+En nuestra sección de [herramientas](https://donttouchmynet.github.io/categories/#herramientas/) podréis ver más herramientas útiles tanto para equipos de defensa como para equipos de ataque.
 {: style="text-align: justify;"}

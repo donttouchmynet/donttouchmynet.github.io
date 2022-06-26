@@ -15,7 +15,7 @@ En esta entrada vamos a ver como la matriz de MITRE ATT&CK para AWS puede ayudar
 Como también pasa en las infraestructuras clásicas, la prevención está muy bien y es fundamental pero la detección se ha convertido en algo esencial. Hemos asumido ya que tenemos que orientar nuestra defensa no solo a prevenir sino a detectar y además debemos presuponer que nuestra infraestructura en un momento u otro será comprometida.
 {: style="text-align: justify;"}
 
-Es por esto que teniendo en mente este foco de detección uno de los frameworks que más nos pueden ayudar a decidir qué tenemos que detectar, como vimos en la pasada entrada [MITRE ATT&CK, defiende teniendo en cuenta las tácticas y técnicas del adversario](https://donttouchmy.net/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/), es [MITRE ATT&CK](https://attack.mitre.org/).
+Es por esto que teniendo en mente este foco de detección uno de los frameworks que más nos pueden ayudar a decidir qué tenemos que detectar, como vimos en la pasada entrada [MITRE ATT&CK, defiende teniendo en cuenta las tácticas y técnicas del adversario](https://donttouchmynet.github.io/mitre%20att&ck/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/), es [MITRE ATT&CK](https://attack.mitre.org/).
 {: style="text-align: justify;"}
 
 Como MITRE ATT&CK se basa en observaciones reales podemos usar esta matriz para evaluar nuestra seguridad actual. Esto lo podemos hacer asignando un nivel de madurez a cada una de las técnicas y verificando para cada una de ellas en que nivel de madurez se encuentra nuestra infraestructura. [John Hubbard](https://twitter.com/SecHubb) presentó en el SANS Summit los siguientes niveles de madurez:

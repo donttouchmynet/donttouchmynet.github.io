@@ -1,5 +1,5 @@
 ---
-title: "Writeup – The Vault (SwampCTF 2018) – Crack SHA256"
+title: "Conferencias de seguridad – XI OWASP Spain Chapter Meeting"
 author: Adan Alvarez
 classes: wide
 excerpt: "El pasado día 23 de noviembre se celebró en laSalle Barcelona el XI OWASP Spain Chapter Meeting. Un evento de seguridad gratuito y abierto que se celebra desde 2006 y cuenta con grandes profesionales del sector."
@@ -227,7 +227,7 @@ En cada uno de los requerimientos encontramos diversos controles según el nivel
 Para poder realizar la verificación de cada uno de estos controles OWASP ofrece la [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). Que es un manual que nos explicará con herramientas como probar aplicaciones móviles y hacer ingeniería inversa.
 {: style="text-align: justify;"}
 
-Durante la presentación se vieron varias pruebas con [herramientas](https://donttouchmy.net/herramientas/) como [FRIDA](https://www.frida.re/) y se nos explicó como siguiendo esta guía se localizaron varios problemas en las aplicaciones bancarias de grandes bancos.
+Durante la presentación se vieron varias pruebas con [herramientas](https://donttouchmynet.github.io/categories/#herramientas/) como [FRIDA](https://www.frida.re/) y se nos explicó como siguiendo esta guía se localizaron varios problemas en las aplicaciones bancarias de grandes bancos.
 {: style="text-align: justify;"}
 
 #### Internet of Things, Smart Cities y otras vulnerabilidades

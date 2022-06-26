@@ -33,7 +33,7 @@ Este error es más claro, nos indica que el usuario no existe. Por lo tanto, lo 
 La respuesta indica que el hash XXX no es igual al real_hash XXX. El primer hash es el hash SHA256 de nuestro password y el segundo debe ser el hash SHA256 del password que necesitamos.
 {: style="text-align: justify;"}
 
-Sabiendo el hash SHA256 del password que necesitamos probaremos a realizar un ataque de fuerza bruta mediante [hashcat](https://hashcat.net/hashcat/), una herramienta de recuperación de passwords que podéis ver en nuestra sección [herramientas](https://donttouchmy.net/herramientas/)
+Sabiendo el hash SHA256 del password que necesitamos probaremos a realizar un ataque de fuerza bruta mediante [hashcat](https://hashcat.net/hashcat/), una herramienta de recuperación de passwords que podéis ver en nuestra sección [herramientas](https://donttouchmynet.github.io/categories/#herramientas/)
 {: style="text-align: justify;"}
 
 En nuestro caso decidimos utilizar el diccionario rockyou que podéis localizar en el GitHub de [SecLists](https://github.com/danielmiessler/SecLists)

@@ -27,7 +27,7 @@ En la cabecera veremos el algoritmo utilizado para la firma, en el contenido la 
 En el caso de localizar un JWT durante un pentest, es importante verificar que el token es robusto. Por lo tanto, si descubrimos un token que utiliza un secreto en la firma deberemos realizar un ataque de fuera bruta para comprobar que el secreto no puede ser descubierto. De serlo, seríamos capaces de generar nuestros propios tokens, comprometiendo de este modo la seguridad del sitio que utilice estos tokens.
 {: style="text-align: justify;"}
 
-Para relizar fuerza bruta a tokens JWT podemos utilizar [hashcat](https://donttouchmy.net/herramientas/) de la siguiente manera:
+Para relizar fuerza bruta a tokens JWT podemos utilizar [hashcat](https://donttouchmynet.github.io/categories/#herramientas/) de la siguiente manera:
 {: style="text-align: justify;"}
 ```
 .\hashcat64.exe -m 16500 -a 0 .\jwt.txt .\rockyou.txt -r .\kamaji34K.rule.txt

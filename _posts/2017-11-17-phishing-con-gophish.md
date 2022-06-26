@@ -15,7 +15,7 @@ El phishing, dentro de los ataques de ingeniería social, es uno de los ataques 
 La concienciación en seguridad es un aspecto fundamental y es por esto que existen herramientas para ayudar a los equipos de seguridad a concienciar a los empleados, una de estas es [Gophish](https://getgophish.com/).
 {: style="text-align: justify;"}
 
-Gophish es una [herramienta](https://donttouchmy.net/herramientas/) para lanzar campañas de phishing de forma sencilla. Nos permite crear un correo de phishing y una página web dónde pedir credenciales. Tras la campaña se obtienen resultados detallados de los usuarios que:
+Gophish es una [herramienta](https://donttouchmynet.github.io/categories/#herramientas/) para lanzar campañas de phishing de forma sencilla. Nos permite crear un correo de phishing y una página web dónde pedir credenciales. Tras la campaña se obtienen resultados detallados de los usuarios que:
 {: style="text-align: justify;"}
 
 -   Abren el correo

@@ -14,7 +14,7 @@ tags:
 Una de las tácticas más comunes cuando un atacante logra el acceso inicial es obtener persistencia. El objetivo de esta es mantenerse en la infraestructura pese a que se reinicie el equipo, las contraseñas o haya cualquier interrupción que pueda interrumpir el acceso inicial. Una de las técnicas utilizadas para obtener persistencia en AWS si en la cuenta se usa [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/es/ecr/) es añadiendo implantes en las imágenes de los contenedores.
 {: style="text-align: justify;"}
 
-Esta técnica la encontramos bajo en nombre [*Implant Container Image*](https://attack.mitre.org/techniques/T1525/) en [Mitre Att&ck](https://donttouchmy.net/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/) y tiene el ID T1525.
+Esta técnica la encontramos bajo en nombre [*Implant Container Image*](https://attack.mitre.org/techniques/T1525/) en [Mitre Att&ck](https://donttouchmynet.github.io/mitre%20att&ck/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/) y tiene el ID T1525.
 {: style="text-align: justify;"}
 
 Estos son los pasos que podría seguir un atacante para lograr persistencia en AWS tras conseguir un usuario con permisos al ECR:

