@@ -8,8 +8,10 @@ categories:
 tags:
   - Containers
   - Análisis de código
+  - Blue Team
 ---
-En este post explicaremos una forma sencilla de realizar un análisis de código utilizando [SonarQube](https://www.sonarqube.org/) y [Docker](https://www.docker.com/what-docker).[![SonarQube con Docker](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube-300x99.png)](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube.png)
+En este post explicaremos una forma sencilla de realizar un análisis de código utilizando [SonarQube](https://www.sonarqube.org/) y [Docker](https://www.docker.com/what-docker).
+[![SonarQube con Docker](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube-300x99.png)](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube.png)
 {: style="text-align: justify;"}
 
 El propósito no es tener una instalación correcta de SonarQube sino usar el docker de SonarQube para analizar código de forma puntual.

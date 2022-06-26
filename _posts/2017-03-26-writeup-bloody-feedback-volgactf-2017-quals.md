@@ -5,8 +5,8 @@ classes: wide
 excerpt: "El reto que se detalla en esta entrada es un reto web de 100 puntos del CTF VolgaCTF 2017 Quals, celebrado desde el viernes día 24 de marzo hasta el domingo 26 de marzo. Este se resuelve mendiante una injección SQL."
 categories:
   - Web
-tags:
   - CTF
+tags:
   - Pentest
   - OWASP
 ---

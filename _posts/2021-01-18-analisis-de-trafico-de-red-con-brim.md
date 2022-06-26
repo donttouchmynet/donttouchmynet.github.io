@@ -11,6 +11,7 @@ tags:
   - Herramientas
   - Zeek
   - Network
+  - Blue Team
 ---
 [Brim](https://www.brimsecurity.com/) es una herramienta open source que nos permite realizar análisis de tráfico de red combinando lo mejor de las herramientas [Zeek](https://zeek.org/) y [Wireshark](https://www.wireshark.org/). Con Brim tenemos la visibilidad de Zeek pero manteniendo el detalle de Wireshark a un clic de distancia. Esto hace que podamos analizar capturas que con Wireshark serían muy lentas y difíciles de analizar con mucha rapidez.
 {: style="text-align: justify;"}

@@ -5,9 +5,8 @@ classes: wide
 excerpt: "¡Volvemos con los retos de CTFs! El reto que se detalla en esta entrada es un reto web del CTF SwampCTF 2018, celebrado durante los días 29,30 y 31 de marzo. Este se resuelve crackaenado un hash SHA256."
 categories:
   - Web
-  - Herramientas
-tags:
   - CTF
+tags:
   - Bruteforce
 ---
 ¡Volvemos con los retos de CTFs! El reto que se detalla en esta entrada es un reto web del CTF SwampCTF 2018, celebrado durante los días 29,30 y 31 de marzo. Este se resuelve crackaenado un hash SHA256.

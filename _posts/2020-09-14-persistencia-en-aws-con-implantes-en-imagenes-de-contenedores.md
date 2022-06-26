@@ -5,10 +5,10 @@ classes: wide
 excerpt: "Una de las tácticas más comunes cuando un atacante logra el acceso inicial es obtener persistencia. El objetivo de esta es mantenerse en la infraestructura pese a que se reinicie el equipo, las contraseñas o haya cualquier interrupción que pueda interrumpir el acceso inicial. Una de las técnicas utilizadas para obtener persistencia en AWS si en la cuenta se usa Amazon Elastic Container Registry (ECR) es añadiendo implantes en las imágenes de los contenedores."
 categories:
   - AWS
+  - MITRE ATT&CK
 tags:
   - Red Team
   - Persistencia
-  - MITRE ATT&CK
   - Containers
 ---
 Una de las tácticas más comunes cuando un atacante logra el acceso inicial es obtener persistencia. El objetivo de esta es mantenerse en la infraestructura pese a que se reinicie el equipo, las contraseñas o haya cualquier interrupción que pueda interrumpir el acceso inicial. Una de las técnicas utilizadas para obtener persistencia en AWS si en la cuenta se usa [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/es/ecr/) es añadiendo implantes en las imágenes de los contenedores.

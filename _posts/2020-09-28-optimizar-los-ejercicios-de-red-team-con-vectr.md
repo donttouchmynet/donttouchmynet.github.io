@@ -5,11 +5,12 @@ classes: wide
 excerpt: "En la entrada ATT&CK para AWS hablamos sobre ATT&CK Navigator y adjuntamos un Google Sheet para poder hacer seguimiento sobre nuestro estado de madurez. En esta entrada veremos como dar un paso más utilizando VECTR."
 categories:
   - Herramientas
+  - MITRE ATT&CK
 tags:
   - vectr
   - Red team
-  - MITRE ATT&CK
   - Purple Team
+  - Blue Team
 ---
 En la entrada [ATT&CK para AWS](https://donttouchmynet.github.io/aws/attck-para-aws/) hablamos sobre ATT&CK Navigator y adjuntamos un Google Sheet para poder hacer seguimiento sobre nuestro estado de madurez. En esta entrada veremos como dar un paso más utilizando [VECTR](https://vectr.io/).
 {: style="text-align: justify;"}

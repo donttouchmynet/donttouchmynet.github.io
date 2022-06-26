@@ -9,6 +9,7 @@ tags:
   - Containers
   - Kali
   - Pentest
+  - Red Team
 ---
 Arrancamos y descargamos la [imagen](https://hub.docker.com/r/kalilinux/kali-linux-docker/) de Kali Linux oficial.
 ```

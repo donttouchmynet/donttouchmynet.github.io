@@ -5,9 +5,9 @@ classes: wide
 excerpt: "Este fin de semana se ha realizado el CTF de cualificación para el DEF CON CTF 2018, uno de los ctf más famosos. En esta entrada se detallará la solución de dos retos sencillos. You already know y sbva, ambos retos web se pueden resolver de forma sencilla utilizando burp."
 categories:
   - Web 
+  - CTF
 tags:
   - Burp
-  - CTF
   - Bruteforce
 ---
 Este fin de semana se ha realizado el [CTF de cualificación para el DEF CON CTF 2018](https://scoreboard.oooverflow.io/), uno de los ctf más famosos. En esta entrada se detallará la solución de dos retos sencillos. You already know y sbva, ambos retos web se pueden resolver de forma sencilla utilizando [burp](https://portswigger.net/burp).

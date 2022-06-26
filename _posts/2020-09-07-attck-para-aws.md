@@ -5,9 +5,10 @@ classes: wide
 excerpt: "En esta entrada vamos a ver como la matriz de MITRE ATT&CK para AWS puede ayudarnos a representar mejor nuestra capacidad de detección."
 categories:
   - AWS
-tags:
-  - Red Team
   - MITRE ATT&CK
+tags:
+  - MITRE ATT&CK
+  - Blue Team
 ---
 En esta entrada vamos a ver como la matriz de MITRE ATT&CK para AWS puede ayudarnos a representar mejor nuestra capacidad de detección.
 {: style="text-align: justify;"}

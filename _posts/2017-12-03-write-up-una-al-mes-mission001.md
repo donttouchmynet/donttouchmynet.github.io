@@ -4,11 +4,10 @@ author: Jose M
 classes: wide
 excerpt: "El pasado 15 de Noviembre se presento el primer reto CTF de Una Al mes de Hispasec. Aquí traemos el write-up y aunque era sencillo, nosotros hemos aprendido mucho con él así que esperamos que os guste."
 categories:
-  - Pentest
+  - CTF
 tags:
   - Forencsics
   - Criptografía
-  - CTF
 ---
 El pasado 15 de Noviembre se presento el primer reto *CTF* de [Una Al mes](http://unaaldia.hispasec.com/2017/11/quieres-jugar-un-juego-demuestra-tus.html) de Hispasec. Aquí traemos el *write-up *y aunque era sencillo, nosotros hemos aprendido mucho con él así que esperamos que os guste.
 {: style="text-align: justify;"}

@@ -8,6 +8,7 @@ categories:
 tags:
   - Phishing
   - Red Team
+  - Blue Team
 ---
 El phishing, dentro de los ataques de ingeniería social, es uno de los ataques más utilizados a día de hoy cuando se intenta comprometer la seguridad de una empresa. De nada sirve tener todos los sistemas actualizados, un gran equipo de seguridad y gastar miles de euros en seguridad si los empleados de una empresa no están concienciados y son capaces de facilitar sus datos de acceso a un atacante.
 {: style="text-align: justify;"}

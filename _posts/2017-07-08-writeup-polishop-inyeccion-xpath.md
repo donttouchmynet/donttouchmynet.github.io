@@ -5,8 +5,8 @@ classes: wide
 excerpt: "En esta entrada vamos a detallar el reto web Polishop del CTF PoliCTF 2017, celebrado desde el viernes día 07 de julio hasta el domingo 09 de julio. La parte más importante de esta prueba es una inyección XPath."
 categories:
   - Web
-tags:
   - CTF
+tags:
   - Pentest
   - OWASP
 ---
