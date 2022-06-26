@@ -13,7 +13,7 @@ tags:
 En esta entrada vamos a ver por qué no podemos confiar la seguridad de nuestra web al XSS auditor de Chrome.
 {: style="text-align: justify;"}
 
-Hace un tiempo ya realizamos una [introducción a los ataques Cross-Site Scripting XSS](https://donttouchmy.net/introduccion-ataques-xss/). En estos el atacante utiliza las entradas de datos de un sitio web para inyectar scripts maliciosos (normalmente JavaScript) que después se ejecutarán en el navegador de otros usuarios.
+Hace un tiempo ya realizamos una [introducción a los ataques Cross-Site Scripting XSS](https://donttouchmynet.github.io/web/introduccion-ataques-xss/). En estos el atacante utiliza las entradas de datos de un sitio web para inyectar scripts maliciosos (normalmente JavaScript) que después se ejecutarán en el navegador de otros usuarios.
 {: style="text-align: justify;"}
 
 Como estos ataques se basan en la entrada de datos en un sitio web, Chrome, entre otros navegadores, tiene un mecanismo de seguridad para evitarlos. El problema es que este mecanismo de seguridad tiene varios problemas según el tipo de XSS al que se enfrente.

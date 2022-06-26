@@ -20,7 +20,7 @@ Podéis acceder a ella mediante el siguiente enlace: <https://github.com/center
 Esta nueva contribución por parte de Mitre servirá para ayudar sobre todo a equipos de Red Team y Purple Team a realizar pruebas a las defensas basándose en tácticas, técnicas y procedimientos del mundo real.
 {: style="text-align: justify;"}
 
-Cada plan se centrará en un grupo con nombre específico.  Todos ellos tendrán varios ficheros de texto en formato Markdown donde se indicará toda la información disponible como una descripción del grupo, cuáles son sus objetivos, qué tipo de industrias atacan, qué técnicas y malware utilizan etc... Además, toda esta información irá relacionada con [ATT&CK.](https://donttouchmy.net/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/)
+Cada plan se centrará en un grupo con nombre específico.  Todos ellos tendrán varios ficheros de texto en formato Markdown donde se indicará toda la información disponible como una descripción del grupo, cuáles son sus objetivos, qué tipo de industrias atacan, qué técnicas y malware utilizan etc... Además, toda esta información irá relacionada con [ATT&CK.](https://donttouchmynet.github.io/categories/#mitre-att-ck)
 {: style="text-align: justify;"}
 
 Para cada grupo también se presentará un diagrama de flujo que dará un sumario a alto nivel del escenario. Estos diagramas mostrarán como los adversarios acceden y todo lo que hacen hasta lograr su objetivo. Este es el ejemplo para FIN6:
@@ -47,7 +47,7 @@ Toda esta información se dividirá de la siguiente forma en el repositorio de G
 **Carpeta Emulation_Plan**: contendrá todos los plantes de emulación. Tanto los planes como los scripts se encuentran en este directorio. Además, también encontraremos un diagrama de flujo de operaciones.
 {: style="text-align: justify;"}
 
-**Intelligence_Summary.md**: Resumen de inteligencia explicando detalladamente como se realiza el acceso inicial, movimientos laterales, elevación de privilegios, herramientas utilizadas etc. Toda la información además tiene referencias a [MITRE ATT&CK](https://donttouchmy.net/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/)
+**Intelligence_Summary.md**: Resumen de inteligencia explicando detalladamente como se realiza el acceso inicial, movimientos laterales, elevación de privilegios, herramientas utilizadas etc. Toda la información además tiene referencias a [MITRE ATT&CK](https://donttouchmynet.github.io/mitre%20att&ck/mitre-attck-defiende-teniendo-en-cuenta-las-tacticas-y-tecnicas-del-adversario/)
 {: style="text-align: justify;"}
 
 **Operations_Flow.md**: Aquí encontraremos una representación visual del flujo de operaciones y descripciones de cada fase.
