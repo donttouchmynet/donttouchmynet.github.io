@@ -20,7 +20,7 @@ Tras esto comenzaron las conferencias:
 
 #### Atacando aplicaciones NodeJS
 
-[![SeguridadNodeJS](https://donttouchmy.net/wp-content/uploads/2017/12/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f732f6e6f64656a732e706e67-300x161.png)](https://donttouchmy.net/wp-content/uploads/2017/12/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f732f6e6f64656a732e706e67.png)
+[![SeguridadNodeJS](https://donttouchmynet.github.io/assets/images/old/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f732f6e6f64656a732e706e67-300x161.png)](https://donttouchmynet.github.io/assets/images/old/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f732f6e6f64656a732e706e67.png)
 
 Michael Hidalgo Fallas nos explicó como NodeJS  ha sido adoptado por los gigantes de la tecnología debido a su eficiencia, ya que es asíncrono y basado en eventos.
 {: style="text-align: justify;"}
@@ -66,7 +66,7 @@ De todos modos, se están añadiendo controles para evitar que estos paquetes ac
 
 #### Superficie de ataque en un dispositivo IoT según OWASP Internet of Things Project
 
-[![](https://donttouchmy.net/wp-content/uploads/2017/12/Internet-of-Things-IoT-300x169.jpg)](https://donttouchmy.net/wp-content/uploads/2017/12/Internet-of-Things-IoT.jpg)
+[![](https://donttouchmynet.github.io/assets/images/old/Internet-of-Things-IoT-300x169.jpg)](https://donttouchmynet.github.io/assets/images/old/Internet-of-Things-IoT.jpg)
 
 En esta charla [Miguel Ángel Arroyo Moreno](http://www.twitter.com/miguel_arroyo76) nos habló sobre la metodología a utilizar para evaluar dispositivos IoT.
 {: style="text-align: justify;"}
@@ -156,7 +156,7 @@ En esta presentación se nombraron algunas herramientas como [carrot2](http://s
 
 #### Utilización de Telegram por parte de Daesh
 
-[![telegram](https://donttouchmy.net/wp-content/uploads/2017/12/telegram-300x214.jpg)](https://donttouchmy.net/wp-content/uploads/2017/12/telegram.jpg)
+[![telegram](https://donttouchmynet.github.io/assets/images/old/telegram-300x214.jpg)](https://donttouchmynet.github.io/assets/images/old/telegram.jpg)
 
 En esta presentación, también alejada de las vulnerabilidades web, Carlos Seisdedos, nos dió a conocer algunas de las causas que han motivado el uso de Telegram por parte de organizaciones yihadistas.
 {: style="text-align: justify;"}
@@ -185,7 +185,7 @@ Además, se difunde mucha información falsa e información creada por las agenc
 
 #### Experiencias en pentest de Aplicaciones móviles bancarias usando OWASP MASVS
 
-[![](https://donttouchmy.net/wp-content/uploads/2017/12/mobile-security-300x225.jpg)](https://donttouchmy.net/wp-content/uploads/2017/12/mobile-security.jpg)
+[![](https://donttouchmynet.github.io/assets/images/old/mobile-security-300x225.jpg)](https://donttouchmynet.github.io/assets/images/old/mobile-security.jpg)
 
 Tras las dos conferencias no relacionadas con seguridad en el software, volvemos al software, en este caso a la seguridad en aplicaciones móviles. Luis Alberto Solís nos explicó su experiencia en el pentest de diversas aplicaciones móviles bancarias utilizando OWASP [Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs).
 {: style="text-align: justify;"}
@@ -232,7 +232,7 @@ Durante la presentación se vieron varias pruebas con [herramientas](https://do
 
 #### Internet of Things, Smart Cities y otras vulnerabilidades
 
-[![PrivacidadIoT](https://donttouchmy.net/wp-content/uploads/2017/12/PP63826-300x214.png)](https://donttouchmy.net/wp-content/uploads/2017/12/PP63826.png)
+[![PrivacidadIoT](https://donttouchmynet.github.io/assets/images/old/PP63826-300x214.png)](https://donttouchmynet.github.io/assets/images/old/PP63826.png)
 
 Para acabar la jornada, [Luis Enrique Benítez](https://www.linkedin.com/in/luisbenitezj), nos habló de nuevo sobre seguridad en dispositivos IoT.
 {: style="text-align: justify;"}

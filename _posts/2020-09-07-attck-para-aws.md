@@ -32,7 +32,7 @@ Como MITRE ATT&CK se basa en observaciones reales podemos usar esta matriz para 
 Podemos asignar un color a cada uno de estos niveles y usar ATT&CK Navigator para colorear cada una de las técnicas y obtener una visión global de nuestro estado actual.
 {: style="text-align: justify;"}
 
-[![ATT&CK para AWS](https://donttouchmy.net/wp-content/uploads/2020/08/attack-navigator-300x116.png)](https://donttouchmy.net/wp-content/uploads/2020/08/attack-navigator.png)
+[![ATT&CK para AWS](https://donttouchmynet.github.io/assets/images/old/attack-navigator-300x116.png)](https://donttouchmynet.github.io/assets/images/old/attack-navigator.png)
 
 Conforme mejoremos podremos ir cambiando los niveles de madurez y lograremos observar de forma sencilla como nuestro esfuerzo tiene recompensa. Dentro de lo posible se recomienda la automatización de algunas de las pruebas para poder verificar más fácilmente nuestro estado de madurez.
 {: style="text-align: justify;"}

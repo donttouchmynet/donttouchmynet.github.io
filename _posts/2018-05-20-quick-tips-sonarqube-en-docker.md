@@ -9,7 +9,7 @@ tags:
   - Containers
   - Análisis de código
 ---
-En este post explicaremos una forma sencilla de realizar un análisis de código utilizando [SonarQube](https://www.sonarqube.org/) y [Docker](https://www.docker.com/what-docker).[![SonarQube con Docker](https://donttouchmy.net/wp-content/uploads/2018/02/DV-SonarQube-300x99.png)](https://donttouchmy.net/wp-content/uploads/2018/02/DV-SonarQube.png)
+En este post explicaremos una forma sencilla de realizar un análisis de código utilizando [SonarQube](https://www.sonarqube.org/) y [Docker](https://www.docker.com/what-docker).[![SonarQube con Docker](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube-300x99.png)](https://donttouchmynet.github.io/assets/images/old/DV-SonarQube.png)
 {: style="text-align: justify;"}
 
 El propósito no es tener una instalación correcta de SonarQube sino usar el docker de SonarQube para analizar código de forma puntual.
@@ -23,7 +23,7 @@ systemctl start docker.service
 Descargamos SonarQube y sonar-scanner:
 {: style="text-align: justify;"}
 
-[![docker](https://donttouchmy.net/wp-content/uploads/2018/02/docker-whale-home-logo-300x171.png)](https://donttouchmy.net/wp-content/uploads/2018/02/docker-whale-home-logo.png)
+[![docker](https://donttouchmynet.github.io/assets/images/old/docker-whale-home-logo-300x171.png)](https://donttouchmynet.github.io/assets/images/old/docker-whale-home-logo.png)
 ```
 docker pull newtmitch/sonar-scanner
 docker pull sonarqube

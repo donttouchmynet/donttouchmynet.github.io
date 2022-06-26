@@ -47,7 +47,7 @@ Podemos lanzar brutespray de la siguiente manera:
 ```
 python brutespray.py --file /path/nmap.xml
 ```
-[![Brutespray](https://donttouchmy.net/wp-content/uploads/2019/01/brutespraySuccess-300x60.jpg)](https://donttouchmy.net/wp-content/uploads/2019/01/brutespraySuccess.jpg)
+[![Brutespray](https://donttouchmynet.github.io/assets/images/old/brutespraySuccess-300x60.jpg)](https://donttouchmynet.github.io/assets/images/old/brutespraySuccess.jpg)
 
 Por defecto, Brutespray utilizará listas de usuarios y contraseñas particulares para cada servicio. Podemos indicar nuestras propias listas mediante los parámetros -U y -P:
 {: style="text-align: justify;"}

@@ -26,12 +26,12 @@ Una vez descargado vamos a *Extender -- Options* y en Python Environment selec
 Tras esto vamos a la pestaña *BApp Store*, seleccionamos Autorize y clicamos en *Install* para instalar la extensión:
 {: style="text-align: justify;"}
 
-[![extensión autorize](https://donttouchmy.net/wp-content/uploads/2018/10/install-300x172.png)](https://donttouchmy.net/wp-content/uploads/2018/10/install.png)
+[![extensión autorize](https://donttouchmynet.github.io/assets/images/old/install-300x172.png)](https://donttouchmynet.github.io/assets/images/old/install.png)
 
 Una vez realizada la instalación nos aparecerá una pestaña nueva llamada Autorize:
 {: style="text-align: justify;"}
 
-[![extensión autorize](https://donttouchmy.net/wp-content/uploads/2018/10/Autorize-300x174.png)](https://donttouchmy.net/wp-content/uploads/2018/10/Autorize.png)
+[![extensión autorize](https://donttouchmynet.github.io/assets/images/old/Autorize-300x174.png)](https://donttouchmynet.github.io/assets/images/old/Autorize.png)
 
 ### Configuración
 
@@ -43,24 +43,24 @@ Una vez tenemos los usuarios  debemos acceder a la aplicación con el perfil co
 
 Una vez tenemos la cookie de sesión de un usuario, la configuramos en la extensión Autorize:
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/10/cookie-300x174.png)](https://donttouchmy.net/wp-content/uploads/2018/10/cookie.png)
+[![](https://donttouchmynet.github.io/assets/images/old/cookie-300x174.png)](https://donttouchmynet.github.io/assets/images/old/cookie.png)
 
 Adicionalmente podemos configurar en los apartados Enforcement Detector y Detector Unauthenticated los mensajes con los que responde el servidor si el usuario es incorrecto (Enforcement Detector) o el mensaje si no estas autenticado (Detector Unauthenticated). Por ejemplo:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/10/enforcement-300x163.png)](https://donttouchmy.net/wp-content/uploads/2018/10/enforcement.png)
+[![](https://donttouchmynet.github.io/assets/images/old/enforcement-300x163.png)](https://donttouchmynet.github.io/assets/images/old/enforcement.png)
 
 ### Utilización
 
 Una vez hemos configurado la extensión hacemos clic en el botón Autorize is off para que cambie a Autorize is on:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/10/autorize_on-300x97.png)](https://donttouchmy.net/wp-content/uploads/2018/10/autorize_on.png)
+[![](https://donttouchmynet.github.io/assets/images/old/autorize_on-300x97.png)](https://donttouchmynet.github.io/assets/images/old/autorize_on.png)
 
 En este momento comenzamos a navegar por la aplicación con un usuario con más privilegios. Burp enviará dos peticiones por cada petición realizada, una con la cookie con menos privilegios y otra sin cookie. Con esto podremos comparar las respuestas de la web y ver si tenemos problemas de autorización y autenticación:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/10/navegar-300x138.png)](https://donttouchmy.net/wp-content/uploads/2018/10/navegar.png)
+[![](https://donttouchmynet.github.io/assets/images/old/navegar-300x138.png)](https://donttouchmynet.github.io/assets/images/old/navegar.png)
 
 Esto lo podremos ver mediante los mensajes Enforced! y Bypassed! que muestra la extensión Autorize, las peticiones marcadas como Bypassed deberemos revisarlas para ver si contienen información sensible. De ser así, significará que un usuario con menos privilegios puede acceder a esta información. Incluso una persona sin tener una sesión podría acceder a esta información.
 {: style="text-align: justify;"}

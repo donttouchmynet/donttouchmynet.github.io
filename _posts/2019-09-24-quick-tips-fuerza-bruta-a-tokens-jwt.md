@@ -22,7 +22,7 @@ Los tokens están compuestos por 3 partes. La cabecera, el contenido y la firma.
 En la cabecera veremos el algoritmo utilizado para la firma, en el contenido la identificación, los permisos y normalmente un timestamp y por último la firma que puede ser generada mediante un secreto o utilizando clave privada/pública.
 {: style="text-align: justify;"}
 
-[![jwt](https://donttouchmy.net/wp-content/uploads/2019/09/jwt-300x168.jpg)](https://donttouchmy.net/wp-content/uploads/2019/09/jwt.jpg)
+[![jwt](https://donttouchmynet.github.io/assets/images/old/jwt-300x168.jpg)](https://donttouchmynet.github.io/assets/images/old/jwt.jpg)
 
 En el caso de localizar un JWT durante un pentest, es importante verificar que el token es robusto. Por lo tanto, si descubrimos un token que utiliza un secreto en la firma deberemos realizar un ataque de fuera bruta para comprobar que el secreto no puede ser descubierto. De serlo, seríamos capaces de generar nuestros propios tokens, comprometiendo de este modo la seguridad del sitio que utilice estos tokens.
 {: style="text-align: justify;"}

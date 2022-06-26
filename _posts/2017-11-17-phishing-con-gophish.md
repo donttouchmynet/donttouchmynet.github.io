@@ -46,22 +46,22 @@ y nos aparecerán una serie de opciones. Si hemos escogido una instalación Ubun
 -   Cambiará el nombre del host
 -   **Reiniciará el sistema**.
 
-[![phishing - Opcion 3 GoPhish](https://donttouchmy.net/wp-content/uploads/2017/10/opcion3-300x83.png "Opcion3GoPhish")](https://donttouchmy.net/wp-content/uploads/2017/10/opcion3.png)
+[![phishing - Opcion 3 GoPhish](https://donttouchmynet.github.io/assets/images/old/opcion3-300x83.png "Opcion3GoPhish")](https://donttouchmynet.github.io/assets/images/old/opcion3.png)
 
 Una vez tenemos el sistema preparado podemos configurar SSL utilizando la opción 4.  Esta opción configurará un certificado SSL para nuestro dominio utilizando [Let's Encrypt](https://letsencrypt.org/).
 {: style="text-align: justify;"}
 
-[![Phishihg - Opción 4 Gophish](https://donttouchmy.net/wp-content/uploads/2017/10/opcion4-300x106.png)](https://donttouchmy.net/wp-content/uploads/2017/10/opcion4.png)
+[![Phishihg - Opción 4 Gophish](https://donttouchmynet.github.io/assets/images/old/opcion4-300x106.png)](https://donttouchmynet.github.io/assets/images/old/opcion4.png)
 
 Tras esto podremos instalar el servidor de correo con la opción 5 y Gophish con la opción 8.  Esta opción finalizará con la configuración del certificado SSL para nuestro servidor de Gophish
 {: style="text-align: justify;"}
 
-[![Phishing - Opción 8 Gophish](https://donttouchmy.net/wp-content/uploads/2017/10/opcion8-300x37.png)](https://donttouchmy.net/wp-content/uploads/2017/10/opcion8.png)
+[![Phishing - Opción 8 Gophish](https://donttouchmynet.github.io/assets/images/old/opcion8-300x37.png)](https://donttouchmynet.github.io/assets/images/old/opcion8.png)
 
 Tras instalar Gophish podremos acceder al administrador de Gophish mediante un navegador. El servidor de Gophish estará a la escucha en https://nuestrodominio:3333 y podremos acceder con las credenciales por defecto admin/gophish
 {: style="text-align: justify;"}
 
-[![Gophish interfaz web](https://donttouchmy.net/wp-content/uploads/2017/10/GoPhish_Web-300x234.png)](https://donttouchmy.net/wp-content/uploads/2017/10/GoPhish_Web.png)
+[![Gophish interfaz web](https://donttouchmynet.github.io/assets/images/old/GoPhish_Web-300x234.png)](https://donttouchmynet.github.io/assets/images/old/GoPhish_Web.png)
 
 Podéis encontrar la documentación de Gophish en [GitBook](https://www.gitbook.com/book/gophish/user-guide/details). Además, si no contáis con un dominio podéis adquirir uno de forma gratuita en: [Freenom](http://www.freenom.com/es/index.html?lang=es)
 {: style="text-align: justify;"}

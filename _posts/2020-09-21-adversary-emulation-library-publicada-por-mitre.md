@@ -26,14 +26,14 @@ Cada plan se centrará en un grupo con nombre específico.  Todos ellos tendrá
 Para cada grupo también se presentará un diagrama de flujo que dará un sumario a alto nivel del escenario. Estos diagramas mostrarán como los adversarios acceden y todo lo que hacen hasta lograr su objetivo. Este es el ejemplo para FIN6:
 {: style="text-align: justify;"}
 
-[![Adversary Emulation Library](https://donttouchmy.net/wp-content/uploads/2020/09/flow-212x300.png)](https://donttouchmy.net/wp-content/uploads/2020/09/flow.png)
+[![Adversary Emulation Library](https://donttouchmynet.github.io/assets/images/old/flow-212x300.png)](https://donttouchmynet.github.io/assets/images/old/flow.png)
 
 Además de esta información, una de las secciones más importantes es la que permitirá replicar los procedimientos seguidos por los atacantes. Dando información tanto para poder reproducir el escenario de forma manual comando a comando o para que podamos automatizarlo mediante, por ejemplo [CALDERA](https://github.com/mitre/caldera).
 {: style="text-align: justify;"}
 
 Estos son ejemplos para FIN6:
 
-[![Adversary Emulation Library](https://donttouchmy.net/wp-content/uploads/2020/09/script-300x172.png)](https://donttouchmy.net/wp-content/uploads/2020/09/script.png)
+[![Adversary Emulation Library](https://donttouchmynet.github.io/assets/images/old/script-300x172.png)](https://donttouchmynet.github.io/assets/images/old/script.png)
 
 En la captura podemos ver como se indica qué comandos ejecutaron los miembros de FIN6 para poderlos reproducir y además un comando alternativo.
 {: style="text-align: justify;"}

@@ -417,7 +417,7 @@ Por último, si queremos recibir correos con las IPs que se han benado, podemos 
 ...
 59 23 * * * root egrep $(date -d 'today' +\%y-\%m-\%d)'.*fail2ban\.actions.+Ban' /var/log/fail2ban.log|mail -E -s 'Todays filtered IPs' root
 ```
-[![](https://donttouchmy.net/wp-content/uploads/2018/02/iptalbes.gif)](https://donttouchmy.net/wp-content/uploads/2018/02/iptalbes.gif)
+[![](https://donttouchmynet.github.io/assets/images/old/iptalbes.gif)](https://donttouchmynet.github.io/assets/images/old/iptalbes.gif)
 
 Con esto finalizamos el post. Esperamos que os haya sido útil. En próximos *post *veremos como integrar *ModSecurity  a fail2ban*.
 {: style="text-align: justify;"}

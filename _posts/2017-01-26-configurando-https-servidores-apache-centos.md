@@ -75,6 +75,6 @@ Por último, los certificados de Let's Encrypt tienen una caducidad de 90 días 
 Y después de esto reiniciar el servidor web para que los cambios surjan efecto.
 {: style="text-align: justify;"}
 
-![HTTPS URL](https://donttouchmy.net/wp-content/uploads/2016/06/https.png)
+![HTTPS URL](https://donttouchmynet.github.io/assets/images/old/https.png)
 
 Gracias a Let's Encrypt ya no tenemos escusa para que todos los servidores web utilicen HTTPS.

@@ -52,7 +52,7 @@ docker run --pid=host -t aquasec/kube-bench:latest master
 Aquí vemos el comando y las salida.
 {: style="text-align: justify;"}
 
-[![kube-bench](https://donttouchmy.net/wp-content/uploads/2018/09/Screen-Shot-2018-09-12-at-08.06.23.png)](https://donttouchmy.net/wp-content/uploads/2018/09/Screen-Shot-2018-09-12-at-08.06.23.png)
+[![kube-bench](https://donttouchmynet.github.io/assets/images/old/Screen-Shot-2018-09-12-at-08.06.23.png)](https://donttouchmynet.github.io/assets/images/old/Screen-Shot-2018-09-12-at-08.06.23.png)
 
 Más info en https://github.com/aquasecurity/kube-bench
 

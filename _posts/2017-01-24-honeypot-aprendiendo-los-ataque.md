@@ -15,7 +15,7 @@ tags:
 En primer lugar describiremos que es un honeypot. Un honeypot  es un sistema que tiene como objetivo recibir ataques para aprender de estos. Este simulará servicios que parecerán legítimos de cara al atacante pero que no tienen una utilidad real.
 {: style="text-align: justify;"}
 
-[![Esquema funcionamiento honeypot](https://donttouchmy.net/wp-content/uploads/2017/01/esquemahoneypot-300x234.png)](https://donttouchmy.net/wp-content/uploads/2017/01/esquemahoneypot.png)
+[![Esquema funcionamiento honeypot](https://donttouchmynet.github.io/assets/images/old/esquemahoneypot-300x234.png)](https://donttouchmynet.github.io/assets/images/old/esquemahoneypot.png)
 
 La puesta en marcha de un sistema honeypot nos permitirá aprender de los ataques que recibimos. Además, podemos extraer información de este honeypot para realizar bloqueos con un nivel prácticamente nulo de falsos positivos, añadiendo así una capa de seguridad.
 {: style="text-align: justify;"}

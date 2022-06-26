@@ -61,12 +61,12 @@ Las credenciales por defecto son: admin / 11_ThisIsTheFirstPassword_11
 VECTR nos permite crear «Assessments» utilizando templates como puede ser el de MITRE ATT&CK:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2020/09/assesment-300x109.png)](https://donttouchmy.net/wp-content/uploads/2020/09/assesment.png)
+[![](https://donttouchmynet.github.io/assets/images/old/assesment-300x109.png)](https://donttouchmynet.github.io/assets/images/old/assesment.png)
 
 Si seleccionamos Atomic Read Team (MITRE ATT&CK). Se nos añadirán múltiples campañas y sus casos:
 {: style="text-align: justify;"}
 
--   ![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/TestCases.png)
+-   ![VECTR](https://donttouchmynet.github.io/assets/images/old/TestCases.png)
 
 Si en nuestra evaluación no queremos añadir todas las tácticas podemos deseleccionarlas y dejar solo las que nos aporten valor.
 {: style="text-align: justify;"}
@@ -74,17 +74,17 @@ Si en nuestra evaluación no queremos añadir todas las tácticas podemos desele
 Tras confirmar las tácticas y crear la evaluación tendremos el siguiente cuadro de mandos en el cual podremos ver el progreso y resultados a alto nivel de cada una de las tácticas:
 {: style="text-align: justify;"}
 
-![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/dashboard-1.png)
+![VECTR](https://donttouchmynet.github.io/assets/images/old/dashboard-1.png)
 
 Si accedemos a una de ellas, por ejemplo Movimiento Lateral (Lateral Movement), veremos lo siguiente:
 {: style="text-align: justify;"}
 
-![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/LAteral-Movement-1-1024x493.png)
+![VECTR](https://donttouchmynet.github.io/assets/images/old/LAteral-Movement-1-1024x493.png)
 
 Podremos observar una serie de técnicas ya creadas y además podremos añadir nuevas. Cada una de las técnicas cuenta con información detallada de las acciones realizadas por el Red Team y qué resultados se obtuvieron por parte del Blue Team.
 {: style="text-align: justify;"}
 
-![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/tecjnique-1-1024x544.png)
+![VECTR](https://donttouchmynet.github.io/assets/images/old/tecjnique-1-1024x544.png)
 
 Según avance el ejercicio iremos marcando cada tarea como iniciada, pausada, completada y añadiendo información sobre los resultados de cada una de las técnicas utilizadas.
 {: style="text-align: justify;"}
@@ -95,12 +95,12 @@ Esto nos permitirá realizar un seguimiento de todas las acciones realizadas, po
 VECTR también cuenta con un apartado de reportes muy completo. Entre ellos podremos ver un reporte a alto nivel indicando el número de pruebas realizadas, cuantas fueron detectadas, cuantas fueron bloqueadas y cuantas no se detectaron:
 {: style="text-align: justify;"}
 
-![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/report-1-1024x429.png)
+![VECTR](https://donttouchmynet.github.io/assets/images/old/report-1-1024x429.png)
 
 Además de este resumen a alto nivel y otros tipos de reporte disponibles podemos exportar el resultado a la matriz de ATT&CK:
 {: style="text-align: justify;"}
 
-![VECTR](https://donttouchmy.net/wp-content/uploads/2020/09/mitre2-1024x525.png)
+![VECTR](https://donttouchmynet.github.io/assets/images/old/mitre2-1024x525.png)
 
 Esto reporte nos dará nuestro nivel de madurez en cada una de las técnicas. Además, podremos configurar los filtros de tal manera que solo se muestren las técnicas que afectan a nuestra infraestructura, linux, windows, cloud o la combinación deseada.
 {: style="text-align: justify;"}

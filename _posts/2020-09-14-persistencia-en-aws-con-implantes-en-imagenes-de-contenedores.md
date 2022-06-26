@@ -56,12 +56,12 @@ docker exec -it IDCONTAINER bash
 Las modificaciones para conseguir persistencia dependerán de la imagen descargada. En el siguiente ejemplo tenemos una imagen que ejecuta al iniciar el script run_apache.sh
 {: style="text-align: justify;"}
 
-[![persistencia en AWS](https://donttouchmy.net/wp-content/uploads/2020/09/init-300x77.png)](https://donttouchmy.net/wp-content/uploads/2020/09/init.png)
+[![persistencia en AWS](https://donttouchmynet.github.io/assets/images/old/init-300x77.png)](https://donttouchmynet.github.io/assets/images/old/init.png)
 
 Por lo tanto, un método para poder obtener persistencia es modificar el script que se ejecuta al inicio con una reverse shell:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2020/09/modify_init-300x33.png)](https://donttouchmy.net/wp-content/uploads/2020/09/modify_init.png)
+[![](https://donttouchmynet.github.io/assets/images/old/modify_init-300x33.png)](https://donttouchmynet.github.io/assets/images/old/modify_init.png)
 
 Tras realizar los cambios será necesario guardar el contenedor modificado como nueva imagen:
 {: style="text-align: justify;"}
@@ -81,7 +81,7 @@ docker push IDCUENTAAWS.dkr.ecr.REGION.amazonaws.com/NOMBREREPOSITORIO:latest
 Tras esto solo quedará esperar que la nueva imagen se ejecute y recibir la reverse shell:
 {: style="text-align: justify;"}
 
-[![persistencia en AWS](https://donttouchmy.net/wp-content/uploads/2020/09/reverse_shell-300x63.png)](https://donttouchmy.net/wp-content/uploads/2020/09/reverse_shell.png)
+[![persistencia en AWS](https://donttouchmynet.github.io/assets/images/old/reverse_shell-300x63.png)](https://donttouchmynet.github.io/assets/images/old/reverse_shell.png)
 
 Además de manualmente, esta técnica puede ser realizada de forma algo más automática mediante [CCAT](https://github.com/RhinoSecurityLabs/ccat).
 {: style="text-align: justify;"}

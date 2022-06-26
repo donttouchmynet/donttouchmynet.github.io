@@ -36,16 +36,16 @@ En este ejemplo tendremos que el atacante será un trabajador llamado Tom que ti
 
 Tom accede a su perfil y modifica sus datos introduciendo código JavaScript:
 
-[![XSS](https://donttouchmy.net/wp-content/uploads/2017/01/xss1-1-300x203.png)](https://donttouchmy.net/wp-content/uploads/2017/01/xss1-1.png)
+[![XSS](https://donttouchmynet.github.io/assets/images/old/xss1-1-300x203.png)](https://donttouchmynet.github.io/assets/images/old/xss1-1.png)
 
 Cuando Jerry acceda a ver el perfil de Tom, el servidor enviará en el contenido el script inyectado por Tom y este se ejecutará en el navegador de Jerry:
 {: style="text-align: justify;"}
 
-[![Stored XSS Fase 2](https://donttouchmy.net/wp-content/uploads/2017/01/xss2-300x257.png)](https://donttouchmy.net/wp-content/uploads/2017/01/xss2.png)    [![Stored XSS Fase 3](https://donttouchmy.net/wp-content/uploads/2017/01/xss3-300x217.png)](https://donttouchmy.net/wp-content/uploads/2017/01/xss3.png)
+[![Stored XSS Fase 2](https://donttouchmynet.github.io/assets/images/old/xss2-300x257.png)](https://donttouchmynet.github.io/assets/images/old/xss2.png)    [![Stored XSS Fase 3](https://donttouchmynet.github.io/assets/images/old/xss3-300x217.png)](https://donttouchmynet.github.io/assets/images/old/xss3.png)
 
 Si analizamos el código HTML podremos ver el script introducido por Tom:
 
-[![Stored XSS Código HTML](https://donttouchmy.net/wp-content/uploads/2017/01/xss4-300x158.png)](https://donttouchmy.net/wp-content/uploads/2017/01/xss4.png)
+[![Stored XSS Código HTML](https://donttouchmynet.github.io/assets/images/old/xss4-300x158.png)](https://donttouchmynet.github.io/assets/images/old/xss4.png)
 
 **Reflected Server XSS:** En este tipo de XSS la vulnerabilidad también se encuentra en el código del servidor pero a diferencia del Stored Server XSS el código solo se ejecutará al enviar la petición y no para todas las personas que visiten una página. Es decir, el servidor creará la página añadiendo una entrada enviada en esa petición, esa entrada será la que contendrá el script que se ejecutará en el navegador. Por lo tanto, para ejecutar este código deberemos enviar el script en la petición.
 {: style="text-align: justify;"}
@@ -59,12 +59,12 @@ En este ejemplo tendremos de nuevo al atacante Tom que desea ejecutar código J
 Tom descubre que hay una vulnerabilidad XSS en el buscador de empleados, al introducir un script este se ejecuta en el navegador:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2017/01/2xss1-300x235.png)](https://donttouchmy.net/wp-content/uploads/2017/01/2xss1.png)
+[![](https://donttouchmynet.github.io/assets/images/old/2xss1-300x235.png)](https://donttouchmynet.github.io/assets/images/old/2xss1.png)
 
 Se inyecta el script
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2017/01/2xss2-300x230.png)](https://donttouchmy.net/wp-content/uploads/2017/01/2xss2.png)
+[![](https://donttouchmynet.github.io/assets/images/old/2xss2-300x230.png)](https://donttouchmynet.github.io/assets/images/old/2xss2.png)
 
 Verifica que el script introducido se ejecuta
 {: style="text-align: justify;"}
@@ -72,4 +72,4 @@ Verifica que el script introducido se ejecuta
 Por lo tanto Tom envía a Jerry un correo con un enlace a la web, este enlace contiene como parámetro el código JavaScript a ejecutar. Jerry verá el enlace y confiará en el ya que es a una web conocida, al hacer clic el código JavaScript introducido como parámetro se ejecutará en el navegador de Jerry:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2017/01/2xss3-1-300x171.png)](https://donttouchmy.net/wp-content/uploads/2017/01/2xss3-1.png)
+[![](https://donttouchmynet.github.io/assets/images/old/2xss3-1-300x171.png)](https://donttouchmynet.github.io/assets/images/old/2xss3-1.png)

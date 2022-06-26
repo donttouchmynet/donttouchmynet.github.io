@@ -25,7 +25,7 @@ Lo mas importante de este curso es que va acompañado de acceso a un laboratorio
 Esta es una muy buena certificación que te permite aprender mucho pero requiere mucha dedicación, especialmente si no se tienen conocimientos previos. El laboratorio no está guiado, es decir, si no sabes como continuar con una máquina lo que debes hacer es «Try harder» y esta es la razón por la que se acaba aprendiendo mucho pero por la que también se requiere de una dedicación muy alta.
 {: style="text-align: justify;"}
 
-[![OSCP try harder](https://donttouchmy.net/wp-content/uploads/2019/08/offsec-say-tryharder-798x284-300x107.png)](https://donttouchmy.net/wp-content/uploads/2019/08/offsec-say-tryharder-798x284.png)
+[![OSCP try harder](https://donttouchmynet.github.io/assets/images/old/offsec-say-tryharder-798x284-300x107.png)](https://donttouchmynet.github.io/assets/images/old/offsec-say-tryharder-798x284.png)
 
 Los que estéis pensando en esta certificación para aprender sobre pentesting, tenéis que tener en cuenta que vais a necesitar de muchas horas diarias de práctica y de investigación pues pese a que el curso tiene buenos materiales, estos solo nos dan la base para que nosotros sigamos investigando más técnicas y mejorándolas.
 {: style="text-align: justify;"}

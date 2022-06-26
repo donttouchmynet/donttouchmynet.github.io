@@ -15,20 +15,20 @@ tags:
 
 Al acceder a la URL nos aparecía la siguiente pantalla:
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/web-300x242.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/web.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/web-300x242.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/web.png)
 
 Si introducimos dos caracteres en los campos para probar el formulario recibimos el siguiente mensaje:
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/invalid-300x85.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/invalid.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/invalid-300x85.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/invalid.png)
 
 Si realizamos la misma petición pero con burp como proxy para poder capturar la respuesta el resultado es el siguiente:
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/erroruser-300x132.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/erroruser.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/erroruser-300x132.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/erroruser.png)
 
 Este error es más claro, nos indica que el usuario no existe. Por lo tanto, lo primero que necesitamos es un usuario válido. Probamos con el usuario DUNGEON_MASTER ya que según la web es el único con acceso: «only DUNGEON_MASTER may enter the vault». Probamos esto y efectivamente la respuesta es diferente:
 {: style="text-align: justify;"}
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/hashsha256web-300x131.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/hashsha256web.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/hashsha256web-300x131.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/hashsha256web.png)
 
 La respuesta indica que el hash XXX no es igual al real_hash XXX. El primer hash es el hash SHA256 de nuestro password y el segundo debe ser el hash SHA256 del password que necesitamos.
 {: style="text-align: justify;"}
@@ -39,7 +39,7 @@ Sabiendo el hash SHA256 del password que necesitamos probaremos a realizar un at
 En nuestro caso decidimos utilizar el diccionario rockyou que podéis localizar en el GitHub de [SecLists](https://github.com/danielmiessler/SecLists)
 {: style="text-align: justify;"}
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/hashcat-300x11.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/hashcat.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/hashcat-300x11.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/hashcat.png)
 
 Lanzamos hashcat con las siguientes opciones:
 {: style="text-align: justify;"}
@@ -57,9 +57,9 @@ Lanzamos hashcat con las siguientes opciones:
 Tras lanzar el comando, en pocos segundos obtenemos el password:
 {: style="text-align: justify;"}
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/hash-300x18.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/hash.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/hash-300x18.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/hash.png)
 
 Introducimos la contraseña obtenida en la web de SwampCTF y nos aparecerá la flag !
 {: style="text-align: justify;"}
 
-[![SwampCTF ](https://donttouchmy.net/wp-content/uploads/2018/03/fflag-300x87.png "SwampCTF ")](https://donttouchmy.net/wp-content/uploads/2018/03/fflag.png)
+[![SwampCTF ](https://donttouchmynet.github.io/assets/images/old/fflag-300x87.png "SwampCTF ")](https://donttouchmynet.github.io/assets/images/old/fflag.png)

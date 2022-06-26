@@ -45,11 +45,11 @@ Accedemos al servicio EC2, vamos al menú *Instances* y hacemos clic en *Laun
 
 En el apartado de selección de AMI buscamos genymotion y seleccionamos: Genymotion Cloud : Android 8.0 (oreo) -- ARM versión
 {: style="text-align: justify;"}
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/genyarmoreo-300x187.png)](https://donttouchmy.net/wp-content/uploads/2021/03/genyarmoreo.png)
+[![](https://donttouchmynet.github.io/assets/images/old/genyarmoreo-300x187.png)](https://donttouchmynet.github.io/assets/images/old/genyarmoreo.png)
 
 Después de esto, aceptamos la subscripción y seleccionamos el tipo de instancia. Tendremos 7 días de Genymotion gratis donde solo pagaremos el coste de la instancia, después de 7 días pagaremos también por el software según el tipo de instancia. El precio va desde los 0.163/hr para instancias c6g.medium a los 0.844/hr para instancias m6g.2xlarge:
 {: style="text-align: justify;"}
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/precios-300x147.png)](https://donttouchmy.net/wp-content/uploads/2021/03/precios.png)
+[![](https://donttouchmynet.github.io/assets/images/old/precios-300x147.png)](https://donttouchmynet.github.io/assets/images/old/precios.png)
 
 Con una instancia c6g.medium o c6g.large debería ser más que suficiente.
 
@@ -60,7 +60,7 @@ Tras esto pasamos a las configuraciones de la instancia, en esta lo más importa
 -   443 TCP para HTTPS y WSS
 -   El rango 51000 al 51100 TCP y UDP para WebRTC
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/puertorpordefecto-300x221.png)](https://donttouchmy.net/wp-content/uploads/2021/03/puertorpordefecto.png)
+[![](https://donttouchmynet.github.io/assets/images/old/puertorpordefecto-300x221.png)](https://donttouchmynet.github.io/assets/images/old/puertorpordefecto.png)
 
 Es importante configurar cada una de las reglas para permitir el tráfico solo desde nuestra IP.
 {: style="text-align: justify;"}
@@ -70,7 +70,7 @@ Tras estas configuraciones lanzamos la instancia y nos pedirán que indiquemos q
 {: style="text-align: justify;"}
 Tras lanzar la imagen esperamos a que arranque y copiamos su IP pública. Mediante un navegador accedemos a [https://IPINSTANCIA](https://ipinstancia/) y tras aceptar el error por el certificado autofirmado, nos pedirá autentificación. El usuario por defecto es genymotion y la contraseña es el ID de la instancia. Tras introducir los datos tendremos acceso al terminal:
 {: style="text-align: justify;"}
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/genymovil-295x300.png)](https://donttouchmy.net/wp-content/uploads/2021/03/genymovil.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/genymovil-295x300.png)](https://donttouchmynet.github.io/assets/images/old/genymovil.png)
 
 Si con estos pasos no te ha sido posible desplegar la instancia, en el siguiente enlace se describen en detalle los pasos requeridos para desplegar y usar una instancia de AWS: <https://docs.genymotion.com/paas/latest/02_Getting_Started/021_AWS.html#create-and-set-up-an-instance>
 {: style="text-align: justify;"}
@@ -78,7 +78,7 @@ Si con estos pasos no te ha sido posible desplegar la instancia, en el siguiente
 
 En primer lugar, nos debemos conectar por ADB así que necesitaremos habilitarlo accediendo a *Configuration* en el dispositivo:
 {: style="text-align: justify;"}
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/adb-300x76.png)](https://donttouchmy.net/wp-content/uploads/2021/03/adb.png)
+[![](https://donttouchmynet.github.io/assets/images/old/adb-300x76.png)](https://donttouchmynet.github.io/assets/images/old/adb.png)
 
 Después de esto, si tenemos el puerto abierto a nuestra IP, podremos ejecutar:
 
@@ -106,12 +106,12 @@ adb reverse tcp:3333 tcp:8080
 Por último, solo nos quedará configurar Burp Suite para forzar todo el tráfico al puerto 443. Así que arrancamos Burp Suite y vamos a *Proxy -- Options,* editamos el *proxy listener* y en *Request handling* forzamos el uso de TLS.
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/forcetls-300x126.png)](https://donttouchmy.net/wp-content/uploads/2021/03/forcetls.png)
+[![](https://donttouchmynet.github.io/assets/images/old/forcetls-300x126.png)](https://donttouchmynet.github.io/assets/images/old/forcetls.png)
 
 Con esto el tráfico HTTPS pasará por Burp Suite pero no podremos verlo debido a los certificados. Lo que sí podremos ver si usamos la aplicación es, en la pestaña dashboard, fallos en la negociación del TLS:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/errores-300x40.png)](https://donttouchmy.net/wp-content/uploads/2021/03/errores.png)
+[![](https://donttouchmynet.github.io/assets/images/old/errores-300x40.png)](https://donttouchmynet.github.io/assets/images/old/errores.png)
 
 ### **Hook de la función ssl_crypto_x509_session_verify_cert_chain para deshabilitar la validación de la cadena de certificados**
 
@@ -123,7 +123,7 @@ Para esto será necesario algo de ingeniería inversa utilizando Ghidra. Para po
 ```
 adb pull /data/app/APPLICACIÓN/lib/arm64/libflutter.so
 ```
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/pulllibflutter-300x24.png)](https://donttouchmy.net/wp-content/uploads/2021/03/pulllibflutter.png)
+[![](https://donttouchmynet.github.io/assets/images/old/pulllibflutter-300x24.png)](https://donttouchmynet.github.io/assets/images/old/pulllibflutter.png)
 
 Iniciamos [Ghidra](https://ghidra-sre.org/), creamos un nuevo proyecto y arrastramos el fichero libflutter.so que acabamos de obtener del móvil. Hacemos doble clic y nos pedirá analizarlo, el análisis puede tardar varios minutos y puede mostrar algunos errores.
 {: style="text-align: justify;"}
@@ -131,32 +131,32 @@ Iniciamos [Ghidra](https://ghidra-sre.org/), creamos un nuevo proyecto y arrast
 Tras finalizar el análisis iremos a *Search -- For String*
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/search-300x178.png)](https://donttouchmy.net/wp-content/uploads/2021/03/search.png)
+[![](https://donttouchmynet.github.io/assets/images/old/search-300x178.png)](https://donttouchmynet.github.io/assets/images/old/search.png)
 
 Hacemos clic en *search* y aplicamos en la siguiente pantalla un filtro para x509.cc:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/search2-300x217.png)](https://donttouchmy.net/wp-content/uploads/2021/03/search2.png)
+[![](https://donttouchmynet.github.io/assets/images/old/search2-300x217.png)](https://donttouchmynet.github.io/assets/images/old/search2.png)
 
 Hacemos clic en el único resultado y nos marcará una sección con 4 XREF:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/search3-300x229.png)](https://donttouchmy.net/wp-content/uploads/2021/03/search3.png)
+[![](https://donttouchmynet.github.io/assets/images/old/search3-300x229.png)](https://donttouchmynet.github.io/assets/images/old/search3.png)
 
 3 de ellos podemos ver que están uno detrás del otro, por lo que sabemos que ssl_x509 se compiló en algún lugar en la región x6c0000. Como sabemos que en [ssl_x509.cc](https://github.com/google/boringssl/blob/master/ssl/ssl_x509.cc#L390)  tenemos una llamada a OPENSSL_PUT_ERROR en la línea 390, podemos buscar por 390 mediante la función *Search -- For scalars*.  Seleccionamos *Specific Scalar* y hacemos clic en *search:*
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/03/scalar-300x214.png)](https://donttouchmy.net/wp-content/uploads/2021/03/scalar.png)
+[![](https://donttouchmynet.github.io/assets/images/old/scalar-300x214.png)](https://donttouchmynet.github.io/assets/images/old/scalar.png)
 
 Esto nos mostrará varios resultados pero solo uno de ellos está en la región x6c0000
 {: style="text-align: justify;"}
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/sacalar-300x173.png)](https://donttouchmy.net/wp-content/uploads/2021/03/sacalar.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/sacalar-300x173.png)](https://donttouchmynet.github.io/assets/images/old/sacalar.png)
 
 Si hacemos doble clic nos llevará a una función que parece una buena candidata a ser la función que estamos buscando, ya que entre otras cosas tiene como entrada 3 parámetros:
 {: style="text-align: justify;"}
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/function-1-300x136.png)](https://donttouchmy.net/wp-content/uploads/2021/03/function-1.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/function-1-300x136.png)](https://donttouchmynet.github.io/assets/images/old/function-1.png)
 
 Con esto podemos copiar los primeros bytes de la función y buscarlos en memoria mientras se ejecuta la aplicación usando la función Memory.scan de Frida. Así que usaremos el script del blog de nvisio y modificaremos el pattern y eliminaremos el add.(0x01) de la línea 25 al ser una aplicación de 64bits.  El script para este caso será el siguiente:
 {: style="text-align: justify;"}
@@ -199,7 +199,7 @@ Una vez modificado el script estamos listos para ejecutar la aplicación desde f
 Primero accedemos al *Security Group* de AWS y añadimos el puerto 27042 TCP solo hacia nuestra IP:
 {: style="text-align: justify;"}
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/fridaport-300x138.png)](https://donttouchmy.net/wp-content/uploads/2021/03/fridaport.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/fridaport-300x138.png)](https://donttouchmynet.github.io/assets/images/old/fridaport.png)
 
 Descargamos la versión de Frida server para ARM64 desde: https://github.com/frida/frida/releases
 {: style="text-align: justify;"}
@@ -217,7 +217,7 @@ chmod 755 frida-server /data/local/tmp/frida-server
 Ahora que tenemos frida-server ejecutándose en el servidor podemos ejecutar el script que realizará el hook de la función. Para esto necesitaremos el nombre de la aplicación que podemos verlo en la carpeta /data/app o si la ejecutamos manualmente y mediante frida-ps -H IP listamos los procesos y vemos el nombre.
 {: style="text-align: justify;"}
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/psfrida-300x191.png)](https://donttouchmy.net/wp-content/uploads/2021/03/psfrida.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/psfrida-300x191.png)](https://donttouchmynet.github.io/assets/images/old/psfrida.png)
 
 Para ejecutar la aplicación con el hook ejecutamos
 ```
@@ -226,7 +226,7 @@ frida -H IP -l .\hookcert.js -f NOMBREAPP --no-pause
 Donde IP es la IP pública en AWS, hookcert.js será el fichero con el script modificado y NOMBREAPP será el nombre de la aplicación obtenido en el paso anterior:
 {: style="text-align: justify;"}
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/frida-1-300x70.png)](https://donttouchmy.net/wp-content/uploads/2021/03/frida-1.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/frida-1-300x70.png)](https://donttouchmynet.github.io/assets/images/old/frida-1.png)
 
 Tras la ejecución podremos ver como se detecta donde está la función y comenzamos a recibir logs que nos indican que se está llamando a la función y alterando el resultado.
 {: style="text-align: justify;"}
@@ -236,6 +236,6 @@ Tras la ejecución podremos ver como se detecta donde está la función y comenz
 Vamos a nuestra aplicación, generamos tráfico HTTPS y podremos ver el tráfico de la aplicación Flutter con Burp suite:
 {: style="text-align: justify;"}
 
-[![flutter con burp](https://donttouchmy.net/wp-content/uploads/2021/03/app-188x300.png)](https://donttouchmy.net/wp-content/uploads/2021/03/app.png)
+[![flutter con burp](https://donttouchmynet.github.io/assets/images/old/app-188x300.png)](https://donttouchmynet.github.io/assets/images/old/app.png)
 
-[![flutter con Burp](https://donttouchmy.net/wp-content/uploads/2021/03/brupsuite-300x194.png)](https://donttouchmy.net/wp-content/uploads/2021/03/brupsuite.png)
+[![flutter con Burp](https://donttouchmynet.github.io/assets/images/old/brupsuite-300x194.png)](https://donttouchmynet.github.io/assets/images/old/brupsuite.png)

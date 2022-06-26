@@ -13,7 +13,7 @@ tags:
 El pasado 15 de Noviembre se presento el primer reto *CTF* de [Una Al mes](http://unaaldia.hispasec.com/2017/11/quieres-jugar-un-juego-demuestra-tus.html) de Hispasec. Aquí traemos el *write-up *y aunque era sencillo, nosotros hemos aprendido mucho con él así que esperamos que os guste.
 {: style="text-align: justify;"}
 
-[![Descripción CTF - Write-up Una Al mes #Mission001](https://donttouchmy.net/wp-content/uploads/2017/11/Screenshot-2017-11-30-Mission001-300x177.jpg "Descripción CTF - Write-up Una Al mes #Mission001")](https://donttouchmy.net/wp-content/uploads/2017/11/Screenshot-2017-11-30-Mission001.jpg)
+[![Descripción CTF - Write-up Una Al mes #Mission001](https://donttouchmynet.github.io/assets/images/old/Screenshot-2017-11-30-Mission001-300x177.jpg "Descripción CTF - Write-up Una Al mes #Mission001")](https://donttouchmynet.github.io/assets/images/old/Screenshot-2017-11-30-Mission001.jpg)
 
 Descripción CTF -- Write-up Una Al mes #Mission001
 
@@ -23,7 +23,7 @@ Objetivo: Buscar prueba incriminatoria de que están haciendo algo malo en una e
 
 Nos facilitan una URL de un supuesto equipo interno: http://34.253.233.243/form1.php
 
-[![Página inicio CTF - Write-up Una Al mes #Mission001](https://donttouchmy.net/wp-content/uploads/2017/11/Screenshot-2017-11-30-Pharma-Corp-DB-300x177.jpg "Página inicio CTF - Write-up Una Al mes #Mission001")](https://donttouchmy.net/wp-content/uploads/2017/11/Screenshot-2017-11-30-Pharma-Corp-DB.jpg)
+[![Página inicio CTF - Write-up Una Al mes #Mission001](https://donttouchmynet.github.io/assets/images/old/Screenshot-2017-11-30-Pharma-Corp-DB-300x177.jpg "Página inicio CTF - Write-up Una Al mes #Mission001")](https://donttouchmynet.github.io/assets/images/old/Screenshot-2017-11-30-Pharma-Corp-DB.jpg)
 
 Página inicio CTF -- Write-up Una Al mes #Mission001
 

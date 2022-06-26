@@ -33,13 +33,13 @@ La guía de instalación está [aquí.](https://github.com/brimsec/brim/wiki/In
 Una vez instalado, al ejecutarlo nos aparecerá la siguiente pantalla donde podemos seleccionar el archivo o simplemente arrastrarlo:
 {: style="text-align: justify;"}
 
-[![análisis de tráfico](https://donttouchmy.net/wp-content/uploads/2021/01/Inicio-300x180.png)](https://donttouchmy.net/wp-content/uploads/2021/01/Inicio.png)
+[![análisis de tráfico](https://donttouchmynet.github.io/assets/images/old/Inicio-300x180.png)](https://donttouchmynet.github.io/assets/images/old/Inicio.png)
 {: style="text-align: justify;"}
 
 Al cargar el fichero nos aparecerá la siguiente ventana:
 {: style="text-align: justify;"}
 
-[![análisis de tráfico](https://donttouchmy.net/wp-content/uploads/2021/01/Principal-300x138.png)](https://donttouchmy.net/wp-content/uploads/2021/01/Principal.png)
+[![análisis de tráfico](https://donttouchmynet.github.io/assets/images/old/Principal-300x138.png)](https://donttouchmynet.github.io/assets/images/old/Principal.png)
 
 En esta podemos observar:
 {: style="text-align: justify;"}
@@ -60,49 +60,49 @@ Veamos ahora diferentes ejemplos que nos mostrarán la potencia y la utilidad de
 Si hacemos clic en la consulta predefinida: Unique DNS Queries veremos que la barra superior se completa con la consulta y vemos los resultados del siguiente modo:
 {: style="text-align: justify;"}
 
-[![análisis de tráfico](https://donttouchmy.net/wp-content/uploads/2021/01/DNS-requests-300x178.png)](https://donttouchmy.net/wp-content/uploads/2021/01/DNS-requests.png)
+[![análisis de tráfico](https://donttouchmynet.github.io/assets/images/old/DNS-requests-300x178.png)](https://donttouchmynet.github.io/assets/images/old/DNS-requests.png)
 
 De este modo veremos todos los dominios que han sido consultados, si sospechamos de alguno de ellos podemos consultarlo de forma sencilla en Virtustotal haciendo clic con el botón derecho en el dominio y después VirusTotal Lookup.
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/VirusTotal-1024x744.png)](https://donttouchmy.net/wp-content/uploads/2021/01/VirusTotal.png)
+[![](https://donttouchmynet.github.io/assets/images/old/VirusTotal-1024x744.png)](https://donttouchmynet.github.io/assets/images/old/VirusTotal.png)
 
 Si queremos ver más detalles de una de estas consultas podemos hacier lick derecho, Pivot to logs y volveremos a la pantalla inicial con un filtro para esa la DNS específica:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/pivottologs-1024x670.png)](https://donttouchmy.net/wp-content/uploads/2021/01/pivottologs.png)
+[![](https://donttouchmynet.github.io/assets/images/old/pivottologs-1024x670.png)](https://donttouchmynet.github.io/assets/images/old/pivottologs.png)
 
-[![análisis de tráfico](https://donttouchmy.net/wp-content/uploads/2021/01/consultaDNS-1024x304.png)](https://donttouchmy.net/wp-content/uploads/2021/01/consultaDNS.png)
+[![análisis de tráfico](https://donttouchmynet.github.io/assets/images/old/consultaDNS-1024x304.png)](https://donttouchmynet.github.io/assets/images/old/consultaDNS.png)
 
 Para ver el detalle del paquete podemos ver esta conexión en Wireshark de dos maneras. Seleccionando la conexión y haciendo click en el icono Packets en la parte superior:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/whiresarkclicpackets-1024x316.png)](https://donttouchmy.net/wp-content/uploads/2021/01/whiresarkclicpackets.png)
+[![](https://donttouchmynet.github.io/assets/images/old/whiresarkclicpackets-1024x316.png)](https://donttouchmynet.github.io/assets/images/old/whiresarkclicpackets.png)
 
 o haciendo doble clic para ver toda la información y haciendo clic en el icono de Wireshark:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/whiresarkclic2packets.png)](https://donttouchmy.net/wp-content/uploads/2021/01/whiresarkclic2packets.png)
+[![](https://donttouchmynet.github.io/assets/images/old/whiresarkclic2packets.png)](https://donttouchmynet.github.io/assets/images/old/whiresarkclic2packets.png)
 
 Independientemente del método elegido se nos abrirá wireshak únicamente con esa conexión:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/whireshark-1.png)](https://donttouchmy.net/wp-content/uploads/2021/01/whireshark-1.png)
+[![](https://donttouchmynet.github.io/assets/images/old/whireshark-1.png)](https://donttouchmynet.github.io/assets/images/old/whireshark-1.png)
 
 Vamos a ver ahora la consulta predefinida File Activity
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/fileactivity-1024x392.png)](https://donttouchmy.net/wp-content/uploads/2021/01/fileactivity.png)
+[![](https://donttouchmynet.github.io/assets/images/old/fileactivity-1024x392.png)](https://donttouchmynet.github.io/assets/images/old/fileactivity.png)
 
 Aquí podemos ver los ficheros que aparecen en esta captura, podemos hacer doble clic en el fichero para ver más información.
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/file.png)](https://donttouchmy.net/wp-content/uploads/2021/01/file.png)
+[![](https://donttouchmynet.github.io/assets/images/old/file.png)](https://donttouchmynet.github.io/assets/images/old/file.png)
 
 Dentro de la información que nos aparece tenemos el hash MD5 y SHA1 del fichero que podemos utilizar para hacer una consulta en VirusTotal:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2021/01/lookupvirustotalfile.png)](https://donttouchmy.net/wp-content/uploads/2021/01/lookupvirustotalfile.png)
+[![](https://donttouchmynet.github.io/assets/images/old/lookupvirustotalfile.png)](https://donttouchmynet.github.io/assets/images/old/lookupvirustotalfile.png)
 
 Como podéis observar Brim nos permite de forma muy rápida obtener información importante sobre la captura y realizar un análisis de tráfico a alto nivel permitiéndonos después ir a ver los detalles de la captura en wireshark cargando solo los datos necesarios para evitar la lentitud de wireshark al tratar con capturas muy grandes.
 {: style="text-align: justify;"}

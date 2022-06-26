@@ -48,7 +48,7 @@ Así que la URL sería:
 Si intentamos acceder a la URL con Chrome veremos que el XSS auditor nos bloquea la petición. Esto sucede ya que detecta que la ejecución de código es debido a un script enviado previamente desde la URL.
 {: style="text-align: justify;"}
 
-[![Cross-site scripting auditor de Chrome](https://donttouchmy.net/wp-content/uploads/2018/06/xssblock-300x171.png)](https://donttouchmy.net/wp-content/uploads/2018/06/xssblock.png)
+[![Cross-site scripting auditor de Chrome](https://donttouchmynet.github.io/assets/images/old/xssblock-300x171.png)](https://donttouchmynet.github.io/assets/images/old/xssblock.png)
 
 Pero, ¿Qué sucede si en lugar de cargar nuestro propio script nos aprovechamos del script actual ?
 {: style="text-align: justify;"}
@@ -66,7 +66,7 @@ Así que la URL sería:
 Con esto podemos ver que el código se ejecuta y el XSS auditor no puede bloquearlo.
 {: style="text-align: justify;"}
 
-[![Cross-site scripting bloqueado](https://donttouchmy.net/wp-content/uploads/2018/06/xss-300x86.png)](https://donttouchmy.net/wp-content/uploads/2018/06/xss.png)
+[![Cross-site scripting bloqueado](https://donttouchmynet.github.io/assets/images/old/xss-300x86.png)](https://donttouchmynet.github.io/assets/images/old/xss.png)
 
 Esto es debído a que para ejecutar nuestro código nos apoyamos del código ya existente en la web y el auditor de Chrome no puede detectar la inyección.
 {: style="text-align: justify;"}

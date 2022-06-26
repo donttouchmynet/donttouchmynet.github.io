@@ -29,7 +29,7 @@ Es por esta razón que MITRE ATT&CK está ganando un gran papel en la industria 
 Los TTPs son descriptivos y caracterizan como un adversario se comporta. Estos no se basan en un único ejemplo específico sino que son el resultado de una observación del comportamiento de diversos adversarios en diversos ataques. Por ejemplo, una táctica de los usuarios puede ser obtener persistencia tras comprometer una red y esto puede realizarse, por ejemplo, mediante la técnica de creación de un trabajo programado (Scheduled job). Es por esto que los TTPs dan muy buenos resultados, ya que al basarse en el comportamiento de los atacantes es muy difícil para estos modificar su forma de trabajar. Esto es lo contrario que sucede con los IOCs que se basan en Hashes, IPs, Nombre de dominio etc... que son fáciles de cambiar. La pirámide del dolor de los APT describe muy bien esto:
 {: style="text-align: justify;"}
 
-[![](https://donttouchmy.net/wp-content/uploads/2020/08/apt-pyramid-of-pain-300x221.png)](https://donttouchmy.net/wp-content/uploads/2020/08/apt-pyramid-of-pain.png)
+[![](https://donttouchmynet.github.io/assets/images/old/apt-pyramid-of-pain-300x221.png)](https://donttouchmynet.github.io/assets/images/old/apt-pyramid-of-pain.png)
 
 En la parte inferior tenemos los elementos más fáciles de cambiar y en lo más alto de la pirámide tenemos lo más difícil de cambiar, que son las tácticas, técnicas y los procedimientos.
 {: style="text-align: justify;"}
@@ -40,22 +40,22 @@ Una vez hemos visto la importancia y la utilidad de MITRE ATT&CK veamos la matri
 La matriz se divide en 12 columnas. Cada una de las columnas es para una táctica:
 {: style="text-align: justify;"}
 
-[![MITRE ATT&CK tácticas](https://donttouchmy.net/wp-content/uploads/2020/08/tacticas1-300x114.png)](https://donttouchmy.net/wp-content/uploads/2020/08/tacticas1.png)
+[![MITRE ATT&CK tácticas](https://donttouchmynet.github.io/assets/images/old/tacticas1-300x114.png)](https://donttouchmynet.github.io/assets/images/old/tacticas1.png)
 
 En cada una de las columnas tenemos varias técnicas:
 {: style="text-align: justify;"}
 
-[![MITRE ATT&CK técnicas](https://donttouchmy.net/wp-content/uploads/2020/08/tecnicas2-300x114.png)](https://donttouchmy.net/wp-content/uploads/2020/08/tecnicas2.png)
+[![MITRE ATT&CK técnicas](https://donttouchmynet.github.io/assets/images/old/tecnicas2-300x114.png)](https://donttouchmynet.github.io/assets/images/old/tecnicas2.png)
 
 Y en alguna de las técnicas, desde hace poco, tenemos subtécnicas:
 {: style="text-align: justify;"}
 
-[![MITRE ATT&CK subtécnicas](https://donttouchmy.net/wp-content/uploads/2020/08/subtecnicas1.png)](https://donttouchmy.net/wp-content/uploads/2020/08/subtecnicas1.png)
+[![MITRE ATT&CK subtécnicas](https://donttouchmynet.github.io/assets/images/old/subtecnicas1.png)](https://donttouchmynet.github.io/assets/images/old/subtecnicas1.png)
 
 Si accedemos a cada una de las técnicas podremos obtener información muy valiosa sobre cada una de ellas como: mitigaciones, formas de detectarla, fuentes de datos útiles, adversarios que han utilizado esta técnica y referencias externas.
 {: style="text-align: justify;"}
 
-[![MITRE ATT&CK descripción técnica](https://donttouchmy.net/wp-content/uploads/2020/08/tecnicas3-300x170.png)](https://donttouchmy.net/wp-content/uploads/2020/08/tecnicas3.png)
+[![MITRE ATT&CK descripción técnica](https://donttouchmynet.github.io/assets/images/old/tecnicas3-300x170.png)](https://donttouchmynet.github.io/assets/images/old/tecnicas3.png)
 
 La matriz, como podréis observar, contiene muchísimas técnicas pero aún así siguen siendo muchas menos que los cientos de miles de IOCs que tenemos a día de hoy. Es importante familiarizarse con cada una de ellas para entender mejor a los posibles adversarios y además presuponer siempre que nuestra infraestructura puede ser comprometida para trabajar en una detección eficaz.
 {: style="text-align: justify;"}
