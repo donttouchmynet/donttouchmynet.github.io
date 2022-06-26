@@ -13,5 +13,8 @@ Adan Alvarez:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Flekyy90"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/adan-%C3%A1lvarez-vilchez-539a92115/"  
 Jose M:
   name        : "Jose M"
