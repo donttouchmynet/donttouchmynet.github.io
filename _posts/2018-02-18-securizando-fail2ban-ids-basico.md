@@ -247,8 +247,9 @@ maxretry = 5
 findtime = 60
 bantime = 3600
 ```
+
 Gestionando Fail2Ban
---------------------
+-------------
 
 Primero habilitamos e iniciamos el servicio. Para CentOS 7 los comandos son los siguientes:
 {: style="text-align: justify;"}
@@ -407,6 +408,7 @@ actionstart = ipset -q list f2b-<name> || ipset --create f2b-<name> iphash && <i
 
 actionstop = <iptables> -C <chain> -p <protocol> -m multiport --dports <port> -m set --match-set f2b-<name> src -j <blocktype> && <iptables> -D <chain> -p <protocol> -m multiport --dports <port> -m set --match-set f2b-<name> src -j <blocktype> ; ipset --flush f2b-<name> && ipset --destroy f2b-<name>
 ```
+
 Revisando IPs baneadas
 ----------------------
 
