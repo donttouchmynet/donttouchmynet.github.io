@@ -55,10 +55,12 @@ Siendo $NAME el punto de inyección XPath  teníamos que conseguir mostrar toda
 ```
 '//name[contains(.,"")]|//*[contains(.,"")'
 ```
-Esta consulta añade al resultado de *name,* el resultado de obtener todos los valores de los nodos. Al ejecutar esta inyección sobre *creditcards.xml *nos aparecía el siguiente error: ***«Bad query result: expected items but recieved shop creditcards card circuit number expire_date»**.  *Lo que nos indicaba los nodos del fichero.![inyección XPath](https://donttouchmynet.github.io/assets/images/old/inyeccioncards-300x126.png "inyección XPath")
+Esta consulta añade al resultado de *name,* el resultado de obtener todos los valores de los nodos. Al ejecutar esta inyección sobre *creditcards.xml *nos aparecía el siguiente error: ***«Bad query result: expected items but recieved shop creditcards card circuit number expire_date»**.  *Lo que nos indicaba los nodos del fichero.
+![inyección XPath](https://donttouchmynet.github.io/assets/images/old/inyeccioncards-300x126.png "inyección XPath")
 {: style="text-align: justify;"}
 
-Al probar la consulta contra todos los nodos, al llegar a **card,** nos aparecía la información de todas las tarjetas.[![inyección XPath](https://donttouchmynet.github.io/assets/images/old/inyeccioncardsok-300x98.png "inyección XPath")](https://donttouchmynet.github.io/assets/images/old/inyeccioncardsok.png)
+Al probar la consulta contra todos los nodos, al llegar a **card,** nos aparecía la información de todas las tarjetas.
+[![inyección XPath](https://donttouchmynet.github.io/assets/images/old/inyeccioncardsok-300x98.png "inyección XPath")](https://donttouchmynet.github.io/assets/images/old/inyeccioncardsok.png)
 {: style="text-align: justify;"}
 
 Con esta información, ya se podía volver a la compra e introducir los datos de la tarjeta. Tras introducir estos se nos preguntaba por el **PIN** de la tarjeta, información que no aparecía en este XML.
