@@ -27,26 +27,26 @@ Ahora tenemos la imagen oficial actualizada y con nuestras herramientas preferid
 
 Ahora, a jugar!
 
-# Crear y acceder al *container* asignando un nombre (Primera vez)
+Crear y acceder al *container* asignando un nombre (Primera vez)
 ```
 $ docker run -t -i -h kalidock --name kali kali:slim
 ```
 
-# Iniciar *container* creado y acceder mediante el nombre
+Iniciar *container* creado y acceder mediante el nombre
 ```
 $ docker start kali -a
 ```
 
-# Consultar el estado de nuestros *containers*
+Consultar el estado de nuestros *containers*
 ```
 $ docker ps -a
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 434d35d8eb23 kali:slim "bash" 2 hours ago Exited (130) 7 seconds ago kali
 ```
-# Actualizar recursos de nuestro *container*
+Actualizar recursos de nuestro *container*
 ```
 $ docker update --memory 1g --cpus 2 --memory-swap 2g kali
 ```
-# Para salir del container sin pararlo presiona [CTRL]+[P]+[Q]
+Para salir del container sin pararlo presiona [CTRL]+[P]+[Q]
 
 Saludos!
