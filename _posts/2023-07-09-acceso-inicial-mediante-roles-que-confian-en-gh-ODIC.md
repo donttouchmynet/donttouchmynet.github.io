@@ -27,7 +27,7 @@ Una vez realizada la configuración en AWS, podremos configurar una acción en G
 Las acciones necesarias para que nuestra acción pueda assumir el rol son las siguientes:
 {: style="text-align: justify;"}
 
-1. **Solicitud del ID Token de GitHub:** La GitHub Action solicita un token de identificación llamando a la URL ACTIONS_ID_TOKEN_REQUEST_URL. Para realizar esta solicitud, la Action debe proporcionar el token ACTIONS_ID_TOKEN_REQUEST_TOKEN como autorización.
+- **Solicitud del ID Token de GitHub:** La GitHub Action solicita un token de identificación llamando a la URL ACTIONS_ID_TOKEN_REQUEST_URL. Para realizar esta solicitud, la Action debe proporcionar el token ACTIONS_ID_TOKEN_REQUEST_TOKEN como autorización.
 {: style="text-align: justify;"}
 
 Ejemplo:  
@@ -40,13 +40,13 @@ GitHub, que actúa como un proveedor de identidad de OIDC, verifica la solicitud
 Entre esta información se encuentra el repositorio desde la que se ha ejecutado y desde dónde ( Pull request, push en main etc.)
 {: style="text-align: justify;"}
 
-2. **Uso del JWT Token para asumir un rol en AWS:** Una vez obtenido el JWT token, este puede ser usado para asumir el rol configurado en AWS. Esta operación se realiza mediante la función '[assume-role-with-web-identity](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role-with-web-identity.html)', que es una API de AWS que permite a las entidades con tokens de identidad de proveedores de OIDC (como GitHub) asumir un rol dentro de AWS.
+- **Uso del JWT Token para asumir un rol en AWS:** Una vez obtenido el JWT token, este puede ser usado para asumir el rol configurado en AWS. Esta operación se realiza mediante la función '[assume-role-with-web-identity](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role-with-web-identity.html)', que es una API de AWS que permite a las entidades con tokens de identidad de proveedores de OIDC (como GitHub) asumir un rol dentro de AWS.
 {: style="text-align: justify;"}
 
     La función 'assume-role-with-web-identity' autentica la identidad utilizando el JWT token proporcionado y asume el rol especificado. Como resultado, devuelve un conjunto de credenciales temporales de AWS para este rol.
 {: style="text-align: justify;"}
 
-3. **Acceso a AWS:** Estas credenciales temporales pueden ser utilizadas por la GitHub Action para acceder a los servicios y datos de AWS correspondientes al rol asumido, permitiendo así operaciones seguras y eficientes en la nube.
+- **Acceso a AWS:** Estas credenciales temporales pueden ser utilizadas por la GitHub Action para acceder a los servicios y datos de AWS correspondientes al rol asumido, permitiendo así operaciones seguras y eficientes en la nube.
 {: style="text-align: justify;"}
 
 El problema de esto es que si el rol de AWS está mal configurado, es decir, si las condiciones no se han especificado correctamente, esto podría permitir a cualquier acción de GitHub que pueda obtener un ID token de GitHub, asumir ese rol. Como resultado, esta acción tendría acceso a todos los recursos y operaciones que ese rol de AWS permite. 
